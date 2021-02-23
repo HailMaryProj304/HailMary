@@ -1,3 +1,66 @@
-.HeroButton {
-    background-color: aqua;
+body {
+  font-size: Montserrat;
+}
+
+.Header {
+  background-color: white;
+  padding: 30px 50px 30px 50px;
+  max-height: 55px;
+}
+
+.Menu {
+  max-height: 55px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.navigation-items {
+}
+
+.navigation-item {
+    padding: 9px 25px;
+    align-self: auto;
+    order: 0;
+    flex: 0 1 auto;
+    opacity: 1;
+    color: red;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navigation-item [a] {
+  padding: 9px 25px 9px 25px;
+}
+
+
+.w-nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    margin-top: 0px;
+    padding: 12px 25px;
+    border-radius: 10px;
+    background-color: rgb(232, 90, 79);
+    transition-property: background-color, opacity, color;
+    transition-duration: 400ms, 400ms, 400ms;
+    transition-timing-function: ease, ease, ease;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
 }
