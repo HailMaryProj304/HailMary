@@ -1,6 +1,11 @@
+p {
+  margin: 0;
+}
+
 .BottomText {
-    font-size: small;
-    font: italic;
-    color: black;
-    height: 50px;
+  font-size: small;
+  font-style: italic;
+  color: white;
+  background-color: #010609;
+  text-align: right;
 }
