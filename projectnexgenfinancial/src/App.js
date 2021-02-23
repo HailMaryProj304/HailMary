@@ -22,7 +22,7 @@
 //   );
 // }
 
-import React from "react";
+import React, {useState} from "react";
 import Header from "./Header";
 import HeroButton from "./HeroButton";
 import Footer from "./Footer";
@@ -32,6 +32,7 @@ import Start from "./Start";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
+
   return (
     <div className="App">
       <Router>
