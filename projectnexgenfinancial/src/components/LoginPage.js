@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import '../CSS/LoginPage.css';
 
 function LoginPage({ Login, error}) {
     //details that are being sent over
