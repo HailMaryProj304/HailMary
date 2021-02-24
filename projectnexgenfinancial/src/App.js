@@ -29,6 +29,7 @@ import Footer from "./Footer";
 import About from "./About";
 import Login from "./Login";
 import Start from "./Start";
+import Register from "./components/Register"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -53,6 +54,11 @@ function App() {
           <Route path="/Start">
             <Start />
           </Route>
+
+          <Route path="/Register">
+            <Register />
+          </Route>
+
         </Switch>
       
       </Router>
