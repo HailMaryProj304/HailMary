@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import '../CSS/LoginPage.css';
+import {Link} from "react-router-dom";
+import Register from './Register';
 
 function LoginPage({ Login, error}) {
     //details that are being sent over
@@ -35,7 +37,7 @@ function LoginPage({ Login, error}) {
                 {(error != "") ? (<div className="error">{error}</div>) : ""}
                 <br></br>
                 <input className="button" type="submit" value="Login"></input>
-                <input className="button" type="submit" value="Register"></input>
+                <a><Link to="/register" className="button">Register</Link></a>
 
             </div>
         </form>
