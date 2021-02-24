@@ -13,12 +13,10 @@ function LoginPage({ Login, error}) {
     
     return (
         <form onSubmit={submitHandler}>
-            <div>
+            <div className="innerForm">
                 {/* //use this to style I guess */}
-                <div className="innerForm">
+                <div>
                     <h2>Login</h2>
-                    {/* Display the error if an error is passed */}
-                    {(error != "") ? (<div className="error">{error}</div>) : ""}
                     <div className="form-group">
                         <label htmlFor="Username">Username: </label>
                         {/* Set username in details to the username */}
@@ -32,7 +30,12 @@ function LoginPage({ Login, error}) {
                         <input type="password" name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
                     </div>
                 </div>
-                <input type="submit" value="Login"></input>
+                {/* Display the error if an error is passed */}
+                <br></br>
+                {(error != "") ? (<div className="error">{error}</div>) : ""}
+                <br></br>
+                <input className="button" type="submit" value="Login"></input>
+                <input className="button" type="submit" value="Register"></input>
 
             </div>
         </form>
