@@ -89,48 +89,46 @@ import "../CSS/LoginPage.css";
 function Register() {
   return (
     <div>
-      <form>
+      <form className="shapes">
         <div className="innerForm">
-        <div className="split left">  
-          <h3>Register</h3>
-          <div className="form-group">
-            <label>First name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="First name"
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label>Last name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Last name"
-              required
-              
-            />
-          </div>
-          <div className="form-group">
-            <label>Email</label>
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Enter email"
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label>Password</label>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Enter password"
-              required
-            />
-          </div>
-          //SPLIT HERE
+          <h3 className="Heading">Register</h3>
+          <div className="split left">
+            <div className="form-group">
+              <label>First name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="First name"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label>Last name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Last name"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label>Email Address</label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input
+                type="password"
+                className="form-control"
+                placeholder="Enter password"
+                required
+              />
+            </div>
           </div>
           <div className="split right">
             <div className="form-group">
@@ -138,7 +136,7 @@ function Register() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter Date of Birth"
+                placeholder="Enter date of birth"
                 required
               />
             </div>
@@ -148,7 +146,7 @@ function Register() {
               <input
                 type="tel"
                 className="form-control"
-                placeholder="Enter Phone Number"
+                placeholder="Enter phone number"
                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 required
               />
@@ -159,14 +157,15 @@ function Register() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Street Address"
+                placeholder="Street address"
                 required
               />
             </div>
 
             <div className="form-group">
-              <label>Country </label>
-              <select name="country" id="country" required>
+              <label>Country</label>
+              <br></br>
+              <select name="country" id="country" required className="form-control select-item">
                 <option value="Canada">Canada</option>
                 <option value="USA">USA</option>
               </select>
@@ -175,7 +174,8 @@ function Register() {
 
             <div className="form-group" id="provCodes">
               <label>Province/State</label>
-              <select name="provState" id="provState" required> 
+              <br></br>
+              <select name="provState" id="provState" required className="form-control select-item">
                 <optgroup label="Province">
                   <option value="AB">AB</option>
                   <option value="BC">BC</option>
@@ -258,11 +258,13 @@ function Register() {
                 maxLength="6"
               />
             </div>
-            </div>
-          <input type="submit" className="button" value="Register"></input>
-          <p>
-            <a href="login">Already registered?</a>
-          </p>
+          </div>
+          <div className="register-button">
+            <input type="submit" className="button cc-jumbo-button" value="Register" style={{paddingLeft:'10px',paddingRight:'10px'}}></input>
+            <p>
+              <a href="login">Already registered?</a>
+            </p>
+          </div>
         </div>
       </form>
     </div>
