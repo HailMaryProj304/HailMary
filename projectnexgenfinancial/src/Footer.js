@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className="BottomText">
-            <p>This was made by the homies, for the homies. Wu-Tang Clan comin' atcha. Trademarked by ya boy Skinny Penis</p>
+            <p>This website is made with help by Hail Mary.</p>
         </footer>
     );
 }

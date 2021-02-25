@@ -8,12 +8,12 @@ function HeroButton() {
       <div className="HeroButton">
         <div className="intro-text">
           <h1 style={{ fontSize: "64px" }}>
-            You have committed crimes against Skyrim and her people.
+            NexGen is here to help.
           </h1>
-          <h3 style={{ fontSize: "20px" }}>What say you in your defense?</h3>
+          <h3 style={{ fontSize: "20px" }}>Let us help you find the perfect plan.</h3>
         </div>
-        <Link to="/start" className="button cc-jumbo-button cc-jumbo-white">
-          I rather die than go to prison
+        <Link to="/about" className="button cc-jumbo-button cc-jumbo-white">{/* the link was "/start" but I (Raymond) changed it for the use case demo */}
+          LEARN MORE
         </Link>
       </div>
     </div>
