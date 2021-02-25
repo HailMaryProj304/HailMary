@@ -59,6 +59,22 @@ input {
             animation: fadein 1s;
 }
 
+.split {
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 200px;
+}
+.left {
+    text-align: center;
+    left: 0;
+}
+.right {
+    text-align: Left;
+    right: 0;
+}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
