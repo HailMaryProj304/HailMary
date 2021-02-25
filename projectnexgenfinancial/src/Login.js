@@ -14,7 +14,7 @@ function Login() {
     const Validate = details => {
         console.log(details);
 
-        axios.get("http://localhost:8080/login/" + details.username + "&" + details.password)
+        axios.get("http://localhost:8080/clients/login/" + details.username + "&" + details.password)
         .then((response) => {
             setError("");
             const testUser = response.data;
