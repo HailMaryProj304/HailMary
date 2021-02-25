@@ -3,7 +3,7 @@ import './About.css';
 
 function About() {
     return (
-        <div className="About-BodyText">
+        <div className="BodyText">
             <h1>NexGen Financial</h1>
             <h2>Our Approach is as unique as your needs are</h2>
             <p>At Nexgen we have a truly individual approach to insurance. We believe in taking a comprehensive and multi-generational view of the needs of groups & individuals.
