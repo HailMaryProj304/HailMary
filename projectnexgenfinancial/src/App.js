@@ -28,8 +28,10 @@ import HeroButton from "./HeroButton";
 import Footer from "./Footer";
 import About from "./About";
 import Login from "./Login";
-import Start from "./Start";
+import Contact from "./components/Contact";
 import Register from "./components/Register"
+import Main from "./components/MainPage"
+import AccountPage from "./components/AccountPage"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -51,13 +53,22 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/Start">
-            <Start />
+          <Route path="/Account">
+            <AccountPage />
           </Route>
 
           <Route path="/Register">
             <Register />
           </Route>
+
+          <Route path="/MainPage">
+            <Main />
+          </Route>
+
+          <Route path="/Contact">
+            <Contact />
+          </Route>
+    
 
         </Switch>
       

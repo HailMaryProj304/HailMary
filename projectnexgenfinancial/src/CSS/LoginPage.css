@@ -4,14 +4,14 @@ html {
     background-size: cover;
 }
 
-/* .innerForm {
+.innerForm {
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 50vh;
-} */
+}
 
 .form-control {
     margin-top: 10px;
