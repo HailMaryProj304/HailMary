@@ -5,8 +5,8 @@ a {
   transition-property: opacity;
   transition-duration: 200ms;
   transition-timing-function: ease;
-  color: rgb(26, 27, 31);
-  text-decoration: underline;
+  color:red;
+  text-decoration: none;
 }
 
 .Header {

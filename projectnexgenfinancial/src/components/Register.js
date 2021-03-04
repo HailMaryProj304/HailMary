@@ -89,59 +89,87 @@ import "../CSS/LoginPage.css";
 // }
 
 function Register() {
-  const [regDetails, setRegDetails] = useState({email: "", first_name: "", last_name: "", dob: "", phone_number: "", street_address: "", prov: "", country: "", postal_code: "", password: ""})
-  const [error, setError] = useState(null)
-  const submitHandler = e => {
+  const [regDetails, setRegDetails] = useState({
+    email: "",
+    first_name: "",
+    last_name: "",
+    dob: "",
+    phone_number: "",
+    street_address: "",
+    prov: "",
+    country: "",
+    postal_code: "",
+    password: "",
+  });
+  const [error, setError] = useState(null);
+  const submitHandler = (e) => {
     e.preventDefault();
-    // axios.get("http://localhost:8080/clients/addClient/" + regDetails.email + "&" + regDetails.first_name + "&" + regDetails.last_name + "&" + regDetails.dob + "&" + regDetails.phone_number + "&" 
+    // axios.get("http://localhost:8080/clients/addClient/" + regDetails.email + "&" + regDetails.first_name + "&" + regDetails.last_name + "&" + regDetails.dob + "&" + regDetails.phone_number + "&"
     // + regDetails.street_address + "&" + regDetails.prov + "&" + regDetails.country + "&" + regDetails.postal_code + "&" + regDetails.password)
-    const res = axios.post('http://localhost:8080/clients/RegisterClient', regDetails);
-  }
+    const res = axios.post(
+      "http://localhost:8080/clients/RegisterClient",
+      regDetails
+    );
+  };
 
   return (
     <div>
       <form onSubmit={submitHandler}>
         <div className="innerForm">
-        <div className="split left">  
-          <h3>Register</h3>
-          <div className="form-group">
-            <label>First name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="First name"
-              required onChange={e => setRegDetails({...regDetails, first_name: e.target.value})} value={regDetails.first_name}
-            />
-          </div>
-          <div className="form-group">
-            <label>Last name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Last name"
-              required onChange={e => setRegDetails({...regDetails, last_name: e.target.value})} value={regDetails.last_name}
-              
-            />
-          </div>
-          <div className="form-group">
-            <label>Email</label>
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Enter email"
-              required onChange={e => setRegDetails({...regDetails, email: e.target.value})} value={regDetails.email}
-            />
-          </div>
-          <div className="form-group">
-            <label>Password</label>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Enter password"
-              required onChange={e => setRegDetails({...regDetails, password: e.target.value})} value={regDetails.password}
-            />
-          </div>
-          //SPLIT HERE
+          <h2 className="center-title">Register</h2>
+          <div className="split left">
+            <div className="form-group">
+              <label>First name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="First name"
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, first_name: e.target.value })
+                }
+                value={regDetails.first_name}
+              />
+            </div>
+            <div className="form-group">
+              <label>Last name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Last name"
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, last_name: e.target.value })
+                }
+                value={regDetails.last_name}
+              />
+            </div>
+            <div className="form-group">
+              <label>Email Address</label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Enter email"
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, email: e.target.value })
+                }
+                value={regDetails.email}
+              />
+            </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input
+                type="password"
+                className="form-control"
+                placeholder="Enter password"
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, password: e.target.value })
+                }
+                value={regDetails.password}
+              />
+            </div>
           </div>
           <div className="split right">
             <div className="form-group">
@@ -150,44 +178,79 @@ function Register() {
                 type="date"
                 className="form-control"
                 placeholder="Enter Date of Birth"
-                required onChange={e => setRegDetails({...regDetails, dob: e.target.value})} value={regDetails.dob}
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, dob: e.target.value })
+                }
+                value={regDetails.dob}
               />
             </div>
-
             <div className="form-group">
               <label>Phone Number</label>
               <input
                 type="tel"
                 className="form-control"
-                placeholder="Enter Phone NumbeSDSADr"
+                placeholder="Enter Phone Number"
                 pattern="[0-9]{10}"
-                required onChange={e => setRegDetails({...regDetails, phone_number: e.target.value})} value={regDetails.phone_number}
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, phone_number: e.target.value })
+                }
+                value={regDetails.phone_number}
               />
             </div>
-
             <div className="form-group">
               <label>Street Address</label>
               <input
                 type="text"
                 className="form-control"
                 placeholder="Street Address"
-                required onChange={e => setRegDetails({...regDetails, street_address: e.target.value})} value={regDetails.street_address}
+                required
+                onChange={(e) =>
+                  setRegDetails({
+                    ...regDetails,
+                    street_address: e.target.value,
+                  })
+                }
+                value={regDetails.street_address}
               />
             </div>
-
-            <div className="form-group">
+            <div className="form-group" style={{ marginBottom: "20px" }}>
               <label>Country </label>
-              <select name="country" id="country" required onChange={e => setRegDetails({...regDetails, country: e.target.value})} value={regDetails.country}>
-                <option selected= ""> </option>
+              <br />
+              <select
+                name="country"
+                id="country"
+                className="select-item"
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, country: e.target.value })
+                }
+                value={regDetails.country}
+              >
+                <option selected=""> </option>
                 <option value="Canada">Canada</option>
                 <option value="USA">USA</option>
               </select>
               {/* <input type="text" className="form-control" placeholder="Enter Country" /> */}
             </div>
-
-            <div className="form-group" id="provCodes">
+            <div
+              className="form-group"
+              id="provCodes"
+              style={{ marginBottom: "20px" }}
+            >
               <label>Province/State</label>
-              <select name="provState" id="provState" required onChange={e => setRegDetails({...regDetails, prov: e.target.value})} value={regDetails.prov}> 
+              <br />
+              <select
+                name="provState"
+                id="provState"
+                className="select-item"
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, prov: e.target.value })
+                }
+                value={regDetails.prov}
+              >
                 <optgroup label="Province">
                   <option selected=""> </option>
                   <option value="AB">AB</option>
@@ -261,7 +324,6 @@ function Register() {
                 </optgroup>
               </select>
             </div>
-
             <div className="form-group">
               <label>Postal Code </label>
               <input
@@ -269,14 +331,17 @@ function Register() {
                 className="form-control"
                 placeholder="Enter Postal Code"
                 maxLength="6"
-                onChange={e => setRegDetails({...regDetails, postal_code: e.target.value})} value={regDetails.postal_code}
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, postal_code: e.target.value })
+                }
+                value={regDetails.postal_code}
               />
             </div>
-            </div>
+          </div>
           <div className="register-button">
             <input type="submit" className="button" value="Register"></input>
             <p>
-              <a href="login">Already registered?</a>
+              <a href="login" style={{color:"black"}}>Already registered?</a>
             </p>
           </div>
         </div>
