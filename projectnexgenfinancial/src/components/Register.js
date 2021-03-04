@@ -159,7 +159,7 @@ function Register() {
               <input
                 type="tel"
                 className="form-control"
-                placeholder="Enter Phone Number"
+                placeholder="Enter Phone NumbeSDSADr"
                 pattern="[0-9]{10}"
                 required onChange={e => setRegDetails({...regDetails, phone_number: e.target.value})} value={regDetails.phone_number}
               />
@@ -273,10 +273,12 @@ function Register() {
               />
             </div>
             </div>
-          <input type="submit" className="button" value="Register"></input>
-          <p>
-            <a href="login">Already registered?</a>
-          </p>
+          <div className="register-button">
+            <input type="submit" className="button" value="Register"></input>
+            <p>
+              <a href="login">Already registered?</a>
+            </p>
+          </div>
         </div>
       </form>
     </div>
