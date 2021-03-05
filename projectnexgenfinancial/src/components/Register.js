@@ -1,92 +1,6 @@
 import axios from "axios";
 import React, { useState, Component } from "react";
 import "../CSS/LoginPage.css";
-//FIX DROP DOWN MENU (MUST CLICK TO GET VALUEEE) && ADD ERROR MESSAGES
-// function ProvCodes() {
-//   return (
-//     <div className="form-group" id="provCodes">
-//       <label>Province</label>
-//       <select name="province" id="province">
-//         <option value="AB">AB</option> //Alberta
-//         <option value="BC">BC</option> //British Columbia
-//         <option value="MB">MB</option> //Manitoba
-//         <option value="NB">NB</option> //New Brunswick
-//         <option value="NL">NL</option> //Newfoundland and Labrador
-//         <option value="NT">NT</option> //Northwest Territories
-//         <option value="NS">NS</option> //Nova Scotia
-//         <option value="NU">NU</option> //Nunavut
-//         <option value="ON">ON</option> //Ontario
-//         <option value="PE">PE</option> //Prince Edward Island
-//         <option value="QC">QC</option> //Quebec
-//         <option value="SK">SK</option> //Saskatchewan
-//         <option value="YT">YT</option> //Yukon
-//       </select>
-//     </div>
-//   );
-// }
-
-// function StateCodes() {
-//   return (
-//     <div className="form-group" id="stateCodes">
-//       <label>State</label>
-//       <select name="state" id="state">
-//         <option value="AL">AL</option> //Alabama
-//         <option value="AK">AK</option> //Alaska
-//         <option value="AZ">AZ</option> //Arizona
-//         <option value="AR">AR</option> //Arkansas
-//         <option value="CA">CA</option> //California
-//         <option value="CO">CO</option> //Colorado
-//         <option value="CT">CT</option> //Connecticut
-//         <option value="DE">DE</option> //Delaware
-//         <option value="DC">DC</option> //District of Columbia
-//         <option value="FL">FL</option> //Florida
-//         <option value="GA">GA</option> //Georgia
-//         <option value="HI">HI</option> //Hawaii
-//         <option value="ID">ID</option> //Idaho
-//         <option value="IL">IL</option> //Illinois
-//         <option value="IN">IN</option> //Indiana
-//         <option value="IA">IA</option> //Iowa
-//         <option value="KS">KS</option> //Kansas
-//         <option value="KY">KY</option> //Kentucky
-//         <option value="LA">LA</option> //Louisiana
-//         <option value="ME">ME</option> //Maine
-//         <option value="MD">MD</option> //Maryland
-//         <option value="MA">MA</option> //Massachusetts
-//         <option value="MI">MI</option> //Michigan
-//         <option value="MN">MN</option> //Minnesota
-//         <option value="MS">MS</option> //Mississippi
-//         <option value="MO">MO</option> //Missouri
-//         <option value="MT">MT</option> //Montana
-//         <option value="NE">NE</option> //Nebraska
-//         <option value="NV">NV</option> //Nevada
-//         <option value="NH">NH</option> //New Hampshire
-//         <option value="NJ">NJ</option> //New Jersey
-//         <option value="NM">NM</option> //New Mexico
-//         <option value="NY">NY</option> //New York
-//         <option value="NC">NC</option> //North Carolina
-//         <option value="ND">ND</option> //North Dakota
-//         <option value="OH">OH</option> //Ohio
-//         <option value="OK">OK</option> //Oklahoma
-//         <option value="OR">OR</option> //Oregon
-//         <option value="PA">PA</option> //Pennsylvania
-//         <option value="PR">PR</option> //Puerto Rico
-//         <option value="RI">RI</option> //Rhode Island
-//         <option value="SC">SC</option> //South Carolina
-//         <option value="SD">SD</option> //South Dakota
-//         <option value="TN">TN</option> //Tennessee
-//         <option value="TX">TX</option> //Texas
-//         <option value="UT">UT</option> //Utah
-//         <option value="VT">VT</option> //Vermont
-//         <option value="VI">VI</option> //Virgin Islands
-//         <option value="VA">VA</option> //Virginia
-//         <option value="WA">WA</option> //Washington
-//         <option value="WV">WV</option> //West Virginia
-//         <option value="WI">WI</option> //Wisconsin
-//         <option value="WY">WY</option> //Wyoming
-//       </select>
-//     </div>
-//   );
-// }
 
 function Register() {
   const [regDetails, setRegDetails] = useState({
@@ -104,8 +18,7 @@ function Register() {
   const [error, setError] = useState(null);
   const submitHandler = (e) => {
     e.preventDefault();
-    // axios.get("http://localhost:8080/clients/addClient/" + regDetails.email + "&" + regDetails.first_name + "&" + regDetails.last_name + "&" + regDetails.dob + "&" + regDetails.phone_number + "&"
-    // + regDetails.street_address + "&" + regDetails.prov + "&" + regDetails.country + "&" + regDetails.postal_code + "&" + regDetails.password)
+   
     const res = axios.post(
       "http://localhost:8080/clients/RegisterClient",
       regDetails
