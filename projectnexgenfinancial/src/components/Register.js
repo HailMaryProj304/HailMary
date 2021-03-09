@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useState, Component } from "react";
+import { Redirect } from "react-router-dom";
 import "../CSS/LoginPage.css";
+
 
 function Register() {
   const [regDetails, setRegDetails] = useState({
@@ -19,17 +21,26 @@ function Register() {
   const submitHandler = (e) => {
     e.preventDefault();
    
-    const res = axios.post(
-      "http://localhost:8080/clients/RegisterClient",
-      regDetails
-    );
-  };
+    axios.get("http://localhost:8080/clients/login/" + regDetails.email + "&" + regDetails.password)
+        .then((response) => {
+            console.log("Email is Taken")
+            setError("Email is taken")
+        }, (error) => {
+          const res = axios.post(
+            "http://localhost:8080/clients/RegisterClient",regDetails)
+            setError("")
+            console.log("TEST1")
+            return <Redirect to= 'src\Login.js' />
+        });
+
+  }
 
   return (
     <div>
       <form onSubmit={submitHandler}>
         <div className="innerForm">
-          <h2 className="center-title">Register</h2>
+          <h2 className="center-title">Register
+          {(error != "") ? (<div className="error">{error}</div>) : ""}</h2>
           <div className="split left">
             <div className="form-group">
               <label>First name</label>
