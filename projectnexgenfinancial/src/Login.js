@@ -1,6 +1,7 @@
 
 import React, {useState} from 'react';
 import LoginPage from './components/LoginPage';
+import MainPage from './components/MainPage';
 import axios from 'axios';
 
 function Login() {
@@ -35,7 +36,7 @@ function Login() {
             {/* if the email is null show this page */}
             {(user.email != "") ? (
                 <div className="welcome">
-                    <h2>Welcome, <span>{user.username}</span></h2>
+                    <MainPage/>
                     {/* button calls logout function that sets fields to null */}
                     <button onClick={Logout}> Logout</button>
                 </div>

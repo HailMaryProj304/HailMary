@@ -1,7 +1,7 @@
 html {
-    background-image: url(/src/shapes.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(/src/shapes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .innerForm {
@@ -14,16 +14,18 @@ html {
 }
 
 .form-control {
-    margin-top: 10px;
-    margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.select-item {
-    padding: 5px 35px 5px 5px;
+.form-control {
+  width: 400px;
 }
 
-h2 {
+.center-title {
   text-align: center;
+  position: absolute;
+  top: 10%;
 }
 
 .Heading {
@@ -53,10 +55,10 @@ h2 {
 }
 
 .button.cc-jumbo-button {
-    padding: 16px 35px;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 26px;
+  padding: 16px 35px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 form {
@@ -105,7 +107,16 @@ input {
 }
 
 .register-button {
-  margin-top: 60vh;
+  margin-top: 110vh;
+  position: absolute;
+}
+
+.select-item {
+  margin-top: 10px;
+  width: 427px;
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
 }
 
 @keyframes fadein {

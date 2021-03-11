@@ -1,97 +1,46 @@
+import axios from "axios";
 import React, { useState, Component } from "react";
+import { Redirect } from "react-router-dom";
 import "../CSS/LoginPage.css";
 
-// function ProvCodes() {
-//   return (
-//     <div className="form-group" id="provCodes">
-//       <label>Province</label>
-//       <select name="province" id="province">
-//         <option value="AB">AB</option> //Alberta
-//         <option value="BC">BC</option> //British Columbia
-//         <option value="MB">MB</option> //Manitoba
-//         <option value="NB">NB</option> //New Brunswick
-//         <option value="NL">NL</option> //Newfoundland and Labrador
-//         <option value="NT">NT</option> //Northwest Territories
-//         <option value="NS">NS</option> //Nova Scotia
-//         <option value="NU">NU</option> //Nunavut
-//         <option value="ON">ON</option> //Ontario
-//         <option value="PE">PE</option> //Prince Edward Island
-//         <option value="QC">QC</option> //Quebec
-//         <option value="SK">SK</option> //Saskatchewan
-//         <option value="YT">YT</option> //Yukon
-//       </select>
-//     </div>
-//   );
-// }
 
-// function StateCodes() {
-//   return (
-//     <div className="form-group" id="stateCodes">
-//       <label>State</label>
-//       <select name="state" id="state">
-//         <option value="AL">AL</option> //Alabama
-//         <option value="AK">AK</option> //Alaska
-//         <option value="AZ">AZ</option> //Arizona
-//         <option value="AR">AR</option> //Arkansas
-//         <option value="CA">CA</option> //California
-//         <option value="CO">CO</option> //Colorado
-//         <option value="CT">CT</option> //Connecticut
-//         <option value="DE">DE</option> //Delaware
-//         <option value="DC">DC</option> //District of Columbia
-//         <option value="FL">FL</option> //Florida
-//         <option value="GA">GA</option> //Georgia
-//         <option value="HI">HI</option> //Hawaii
-//         <option value="ID">ID</option> //Idaho
-//         <option value="IL">IL</option> //Illinois
-//         <option value="IN">IN</option> //Indiana
-//         <option value="IA">IA</option> //Iowa
-//         <option value="KS">KS</option> //Kansas
-//         <option value="KY">KY</option> //Kentucky
-//         <option value="LA">LA</option> //Louisiana
-//         <option value="ME">ME</option> //Maine
-//         <option value="MD">MD</option> //Maryland
-//         <option value="MA">MA</option> //Massachusetts
-//         <option value="MI">MI</option> //Michigan
-//         <option value="MN">MN</option> //Minnesota
-//         <option value="MS">MS</option> //Mississippi
-//         <option value="MO">MO</option> //Missouri
-//         <option value="MT">MT</option> //Montana
-//         <option value="NE">NE</option> //Nebraska
-//         <option value="NV">NV</option> //Nevada
-//         <option value="NH">NH</option> //New Hampshire
-//         <option value="NJ">NJ</option> //New Jersey
-//         <option value="NM">NM</option> //New Mexico
-//         <option value="NY">NY</option> //New York
-//         <option value="NC">NC</option> //North Carolina
-//         <option value="ND">ND</option> //North Dakota
-//         <option value="OH">OH</option> //Ohio
-//         <option value="OK">OK</option> //Oklahoma
-//         <option value="OR">OR</option> //Oregon
-//         <option value="PA">PA</option> //Pennsylvania
-//         <option value="PR">PR</option> //Puerto Rico
-//         <option value="RI">RI</option> //Rhode Island
-//         <option value="SC">SC</option> //South Carolina
-//         <option value="SD">SD</option> //South Dakota
-//         <option value="TN">TN</option> //Tennessee
-//         <option value="TX">TX</option> //Texas
-//         <option value="UT">UT</option> //Utah
-//         <option value="VT">VT</option> //Vermont
-//         <option value="VI">VI</option> //Virgin Islands
-//         <option value="VA">VA</option> //Virginia
-//         <option value="WA">WA</option> //Washington
-//         <option value="WV">WV</option> //West Virginia
-//         <option value="WI">WI</option> //Wisconsin
-//         <option value="WY">WY</option> //Wyoming
-//       </select>
-//     </div>
-//   );
-// }
 function Register() {
+  const [regDetails, setRegDetails] = useState({
+    email: "",
+    first_name: "",
+    last_name: "",
+    dob: "",
+    phone_number: "",
+    street_address: "",
+    prov: "",
+    country: "",
+    postal_code: "",
+    password: "",
+  });
+  const [error, setError] = useState(null);
+  const submitHandler = (e) => {
+    e.preventDefault();
+   
+    axios.get("http://localhost:8080/clients/login/" + regDetails.email + "&" + regDetails.password)
+        .then((response) => {
+            console.log("Email is Taken")
+            setError("Email is taken")
+        }, (error) => {
+          const res = axios.post(
+            "http://localhost:8080/clients/RegisterClient",regDetails)
+            setError("")
+            console.log("TEST1")
+            return <Redirect to= 'src\Login.js' />
+        });
+
+  }
+
   return (
     <div>
-      <form className="shapes">
+      <form onSubmit={submitHandler}>
         <div className="innerForm">
-          <h3 className="Heading">Register</h3>
+          <h2 className="center-title">Register
+          {(error != "") ? (<div className="error">{error}</div>) : ""}</h2>
           <div className="split left">
             <div className="form-group">
               <label>First name</label>
@@ -100,6 +49,10 @@ function Register() {
                 className="form-control"
                 placeholder="First name"
                 required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, first_name: e.target.value })
+                }
+                value={regDetails.first_name}
               />
             </div>
             <div className="form-group">
@@ -109,6 +62,10 @@ function Register() {
                 className="form-control"
                 placeholder="Last name"
                 required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, last_name: e.target.value })
+                }
+                value={regDetails.last_name}
               />
             </div>
             <div className="form-group">
@@ -118,6 +75,10 @@ function Register() {
                 className="form-control"
                 placeholder="Enter email"
                 required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, email: e.target.value })
+                }
+                value={regDetails.email}
               />
             </div>
             <div className="form-group">
@@ -127,6 +88,10 @@ function Register() {
                 className="form-control"
                 placeholder="Enter password"
                 required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, password: e.target.value })
+                }
+                value={regDetails.password}
               />
             </div>
           </div>
@@ -134,49 +99,84 @@ function Register() {
             <div className="form-group">
               <label>Date of Birth</label>
               <input
-                type="text"
+                type="date"
                 className="form-control"
-                placeholder="Enter date of birth"
+                placeholder="Enter Date of Birth"
                 required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, dob: e.target.value })
+                }
+                value={regDetails.dob}
               />
             </div>
-
             <div className="form-group">
               <label>Phone Number</label>
               <input
                 type="tel"
                 className="form-control"
-                placeholder="Enter phone number"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                placeholder="Enter Phone Number"
+                pattern="[0-9]{10}"
                 required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, phone_number: e.target.value })
+                }
+                value={regDetails.phone_number}
               />
             </div>
-
             <div className="form-group">
               <label>Street Address</label>
               <input
                 type="text"
                 className="form-control"
-                placeholder="Street address"
+                placeholder="Street Address"
                 required
+                onChange={(e) =>
+                  setRegDetails({
+                    ...regDetails,
+                    street_address: e.target.value,
+                  })
+                }
+                value={regDetails.street_address}
               />
             </div>
-
-            <div className="form-group">
-              <label>Country</label>
-              <br></br>
-              <select name="country" id="country" required className="form-control select-item">
+            <div className="form-group" style={{ marginBottom: "20px" }}>
+              <label>Country </label>
+              <br />
+              <select
+                name="country"
+                id="country"
+                className="select-item"
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, country: e.target.value })
+                }
+                value={regDetails.country}
+              >
+                <option selected=""> </option>
                 <option value="Canada">Canada</option>
                 <option value="USA">USA</option>
               </select>
               {/* <input type="text" className="form-control" placeholder="Enter Country" /> */}
             </div>
-
-            <div className="form-group" id="provCodes">
+            <div
+              className="form-group"
+              id="provCodes"
+              style={{ marginBottom: "20px" }}
+            >
               <label>Province/State</label>
-              <br></br>
-              <select name="provState" id="provState" required className="form-control select-item">
+              <br />
+              <select
+                name="provState"
+                id="provState"
+                className="select-item"
+                required
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, prov: e.target.value })
+                }
+                value={regDetails.prov}
+              >
                 <optgroup label="Province">
+                  <option selected=""> </option>
                   <option value="AB">AB</option>
                   <option value="BC">BC</option>
                   <option value="MB">MB</option>
@@ -248,7 +248,6 @@ function Register() {
                 </optgroup>
               </select>
             </div>
-
             <div className="form-group">
               <label>Postal Code </label>
               <input
@@ -256,13 +255,17 @@ function Register() {
                 className="form-control"
                 placeholder="Enter Postal Code"
                 maxLength="6"
+                onChange={(e) =>
+                  setRegDetails({ ...regDetails, postal_code: e.target.value })
+                }
+                value={regDetails.postal_code}
               />
             </div>
           </div>
           <div className="register-button">
-            <input type="submit" className="button cc-jumbo-button" value="Register" style={{paddingLeft:'10px',paddingRight:'10px'}}></input>
+            <input type="submit" className="button" value="Register"></input>
             <p>
-              <a href="login">Already registered?</a>
+              <a href="login" style={{color:"black"}}>Already registered?</a>
             </p>
           </div>
         </div>

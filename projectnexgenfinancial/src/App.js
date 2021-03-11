@@ -22,18 +22,19 @@
 //   );
 // }
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import HeroButton from "./HeroButton";
 import Footer from "./Footer";
 import About from "./About";
 import Login from "./Login";
-import Start from "./Start";
-import Register from "./components/Register"
+import Contact from "./components/Contact";
+import Register from "./components/Register";
+import Main from "./components/MainPage";
+import AccountPage from "./components/AccountPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
-
   return (
     <div className="App">
       <Router>
@@ -42,25 +43,25 @@ function App() {
           <Route exact path="/">
             <HeroButton />
           </Route>
-
           <Route path="/About">
             <About />
           </Route>
-
           <Route path="/Login">
             <Login />
           </Route>
-
-          <Route path="/Start">
-            <Start />
+          <Route path="/Account">
+            <AccountPage />
           </Route>
-
           <Route path="/Register">
             <Register />
           </Route>
-
+          <Route path="/MainPage">
+            <Main />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
+          </Route>
         </Switch>
-      
       </Router>
       <Footer />
     </div>
