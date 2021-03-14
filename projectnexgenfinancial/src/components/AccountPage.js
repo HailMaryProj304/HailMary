@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/AccountPage.css";
+import "../CSS/style.css";
 
 function AccountPage() {
   return (

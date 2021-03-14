@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, Component } from "react";
 import { Redirect, useHistory } from "react-router-dom";
-import "../CSS/LoginPage.css";
+import '../CSS/style.css';
 
 
 function Register() {

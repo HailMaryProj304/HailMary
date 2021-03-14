@@ -1,7 +1,7 @@
 import React from "react";
-import Icon from "../Icon.png";
+import Icon from "../CSS/Icon.png";
 import { Link } from "react-router-dom";
-import "../CSS/MainPage.css";
+import '../CSS/style.css';
 
 function MainPage() {
   return (
