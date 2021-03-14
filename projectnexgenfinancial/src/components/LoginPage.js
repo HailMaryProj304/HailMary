@@ -7,8 +7,9 @@ function LoginPage({ Login, error}) {
     //details that are being sent over
     const [details, setDetails] = useState({username: "", password: ""})
     //handler that handles the submit button
-    const submitHandler = e => {
+    const submitHandler = async e => {
         e.preventDefault();
+
 
         Login(details);
     }
