@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState, Component } from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import "../CSS/LoginPage.css";
 
 
@@ -18,6 +18,7 @@ function Register() {
     password: "",
   });
   const [error, setError] = useState(null);
+  const history = useHistory();
   const submitHandler = (e) => {
     e.preventDefault();
    
@@ -30,6 +31,7 @@ function Register() {
             "http://localhost:8080/clients/RegisterClient",regDetails)
             setError("")
             console.log("TEST1")
+            history.push("/login");
             return <Redirect to= 'src\Login.js' />
         });
 
