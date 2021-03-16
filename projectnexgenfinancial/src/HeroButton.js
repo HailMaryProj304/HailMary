@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeroButton.css";
+import "./CSS/style.css";
 import { Link } from "react-router-dom";
 
 function HeroButton() {
