@@ -33,6 +33,7 @@ import Register from "./components/Register";
 import Main from "./components/MainPage";
 import AccountPage from "./components/AccountPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import PoliciesPage from "./components/PoliciesPage";
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
           </Route>
           <Route path="/Contact">
             <Contact />
+          </Route>
+          <Route path="/components/PoliciesPage">
+            <PoliciesPage />
           </Route>
         </Switch>
       </Router>

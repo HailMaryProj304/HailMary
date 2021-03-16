@@ -5,11 +5,12 @@ import MainPage from './components/MainPage';
 import axios from 'axios';
 
 function Login() {
-
-    //contains information of the user
-    const [user, setUser] = useState({username: "", email: ""});
+    //contains user object
+    const [user, setUser] = useState()
     //contains information of the error message that is sent
     const [error, setError] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPass] = useState(""); 
 
     //function login pass in details
     const Validate = details => {
@@ -20,6 +21,12 @@ function Login() {
             setError("");
             const testUser = response.data;
             setUser(testUser);
+            setEmail(details.email);
+            setPass(details.password);
+            
+            localStorage.setItem('user', JSON.stringify(testUser));
+            console.log(testUser);
+            console.log("logged in");
         }, (error) => {
             setError("Your credentials are invalid");
         });
@@ -28,13 +35,14 @@ function Login() {
     //function logout
     const Logout = () => {
         console.log("Logout");
-        setUser({username: "", email: ""});
+        setUser({});
+        localStorage.clear();
     }
 
     return (
         <div className="App">
             {/* if the email is null show this page */}
-            {(user.email != "") ? (
+            {(email != "") ? (
                 <div className="welcome">
                     <MainPage/>
                     {/* button calls logout function that sets fields to null */}

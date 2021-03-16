@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 import "../CSS/MainPage.css";
 
 function MainPage() {
+  
   return (
     <div className="MainPage">
       <div className="container">
         <h1 className="account-title">Account</h1>
         <div className="grid">
           <div className="grid-items">
-            <Link to="/policies" style={{color:"black"}}>
+            <Link to="/components/PoliciesPage" style={{color:"black"}}>
               <img src={Icon} width="50px"></img>
               <h3>View policies</h3>
               View policies that you have chosen. <br />
