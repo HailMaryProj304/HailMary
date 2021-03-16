@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import LoginPage from './components/LoginPage';
 import MainPage from './components/MainPage';
 import axios from 'axios';
+import { Redirect, useHistory } from "react-router-dom";
 
 function Login() {
     //contains user object
@@ -11,11 +12,23 @@ function Login() {
     const [error, setError] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPass] = useState(""); 
-
+    const history = useHistory();
     //function login pass in details
     const Validate = details => {
         console.log(details);
-
+        axios.get("http://localhost:8080/admin/login/" + details.username + "&" + details.password).then((response) => {
+            setError("");
+            const testUser = response.data;
+            setUser(testUser);
+            setEmail(details.email);
+            setPass(details.password);
+            
+            localStorage.setItem('user', JSON.stringify(testUser));
+            console.log(testUser);
+            console.log("logged in");
+            history.push("/AdminPage")
+            return <Redirect to= 'src\components\AdminPage.js' />
+        }).catch(err => {
         axios.get("http://localhost:8080/clients/login/" + details.username + "&" + details.password)
         .then((response) => {
             setError("");
@@ -29,9 +42,8 @@ function Login() {
             console.log("logged in");
         }, (error) => {
             setError("Your credentials are invalid");
-        });
+        })});
     }
-
     //function logout
     const Logout = () => {
         console.log("Logout");

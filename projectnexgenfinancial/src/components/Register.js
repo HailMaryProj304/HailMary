@@ -28,7 +28,7 @@ function Register() {
             setError("Email is taken")
         }, (error) => {
           const res = axios.post(
-            "http://localhost:8080/clients/RegisterClient",regDetails)
+            "http://localhost:8080/clients/registerClient",regDetails)
             setError("")
             console.log("TEST1")
             history.push("/login");
