@@ -4,7 +4,7 @@ import "../CSS/style.css";
 
 function Contact() {
   const [emailDetails, setEmailDetails] = useState({
-    from: "", name: "", topic: "",
+    email: "", name: "", topic: "",
   });
   const submitHandler = (e) => {
     e.preventDefault();
@@ -23,11 +23,11 @@ function Contact() {
         <h2 htmlFor="Contact Details" style={{textAlign:"center"}}>Contact Details</h2>
         <div className="form-center">
           <p>Name:</p>
-          <input type="text" className="form-control" onChange={(e) => setEmailDetails({...emailDetails, name: e.target.value}) } value={emailDetails.name}/>
+          <input type="text" className="form-control" required onChange={(e) => setEmailDetails({...emailDetails, name: e.target.value}) } value={emailDetails.name}/>
         </div>
         <div className="form-center">
           <p>Email:</p>
-          <input type="text" className="form-control" onChange={(e) => setEmailDetails({...emailDetails, from: e.target.value}) } value={emailDetails.from}/>
+          <input type="text" className="form-control" required onChange={(e) => setEmailDetails({...emailDetails, from: e.target.value}) } value={emailDetails.from}/>
         </div>
         <h2 className="form-center" htmlFor="consultation" style={{marginBottom:'2rem'}}>Request a Consultation</h2>
         <select

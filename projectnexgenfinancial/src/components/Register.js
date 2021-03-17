@@ -5,6 +5,7 @@ import '../CSS/style.css';
 
 
 function Register() {
+
   const [regDetails, setRegDetails] = useState({
     email: "",
     first_name: "",
