@@ -16,34 +16,48 @@ function Login() {
     //function login pass in details
     const Validate = details => {
         console.log(details);
-        axios.get("http://localhost:8080/admin/login/" + details.username + "&" + details.password).then((response) => {
+        axios.get("http://localhost:8080/admin/login/" + details.username + "&" + details.password)
+        .then((response) => {
             setError("");
             const testUser = response.data;
-            setUser(testUser);
-            setEmail(details.email);
-            setPass(details.password);
+            if(!(testUser === null)) {
+                setUser(testUser);
+                setEmail(details.email);
+                setPass(details.password);
+                
+                localStorage.setItem('user', JSON.stringify(testUser));
+                console.log(testUser);
+                console.log("logged in");
+                return "admin";
+            }
+        })
             
-            localStorage.setItem('user', JSON.stringify(testUser));
-            console.log(testUser);
-            console.log("logged in");
-            history.push("/AdminPage")
-            return <Redirect to= 'src\components\AdminPage.js' />
-        }).catch(err => {
         axios.get("http://localhost:8080/clients/login/" + details.username + "&" + details.password)
         .then((response) => {
             setError("");
             const testUser = response.data;
-            setUser(testUser);
-            setEmail(details.email);
-            setPass(details.password);
-            
-            localStorage.setItem('user', JSON.stringify(testUser));
-            console.log(testUser);
-            console.log("logged in");
-        }, (error) => {
-            setError("Your credentials are invalid");
-        })});
-    }
+            if(!(testUser === null)) {
+                setUser(testUser);
+                setEmail(details.email);
+                setPass(details.password);
+                
+                localStorage.setItem('user', JSON.stringify(testUser));
+                console.log(testUser);
+                console.log("logged in");
+                return "client";
+            }
+
+            else {
+                setError("Credentials are invalid")
+                return "";
+            }
+        })
+
+        
+       
+    
+}
+    
     //function logout
     const Logout = () => {
         console.log("Logout");
@@ -64,6 +78,7 @@ function Login() {
 
                 <LoginPage Login={Validate} error={error}/>
             )}
+        
         </div>
     )}
 export default Login;

@@ -4,26 +4,32 @@ import "../CSS/style.css";
 
 function AccountPage() {
   const [user, setUser] = useState("")
-  const [regDetails, setRegDetails] = useState({
-    email: "",
-    first_name: "",
-    last_name: "",
-    dob: "",
-    phone_number: "",
-    street_address: "",
-    prov: "",
-    country: "",
-    postal_code: "",
-    password: "",
+  const fillUser = JSON.parse(localStorage.getItem('user'))
+  var clientId
+  const [userDetails, setUserDetails] = useState({
+    client_id: fillUser.client_id,
+    email: fillUser.email,
+    first_name: fillUser.first_name,
+    last_name: fillUser.last_name,
+    dob: fillUser.dob,
+    phone_number: fillUser.phone_number,
+    street_address: fillUser.street_address,
+    prov: fillUser.prov,
+    country: fillUser.country,
+    postal_code: fillUser.postal_code,
+    password: fillUser.password,
   });
  
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.put("http://localhost:8080/clients/update/", regDetails)
-    const currentUser = regDetails
+    //make get Id by email axios here
+    axios.put("http://localhost:8080/clients/update/", userDetails)
   }
+
+
   return (
     <div>
+      {fillUser.password}
       <form onSubmit={submitHandler}>
         <div className="innerForm">
           <h2 className="center-title">Change Account Information</h2>
@@ -36,9 +42,9 @@ function AccountPage() {
                 placeholder="First name"
                 required
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, first_name: e.target.value })
+                  setUserDetails({ ...userDetails, first_name: e.target.value })
                 }
-                value={regDetails.first_name}
+                value={userDetails.first_name}
               />
             </div>
             <div className="form-group">
@@ -49,9 +55,9 @@ function AccountPage() {
                 placeholder="Last name"
                 required
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, last_name: e.target.value })
+                  setUserDetails({ ...userDetails, last_name: e.target.value })
                 }
-                value={regDetails.last_name}
+                value={userDetails.last_name}
               />
             </div>
             <div className="form-group">
@@ -62,9 +68,9 @@ function AccountPage() {
                 placeholder="Enter email"
                 required
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, email: e.target.value })
+                  setUserDetails({ ...userDetails, email: e.target.value })
                 }
-                value={regDetails.email}
+                value={userDetails.email}
               />
             </div>
             <div className="form-group">
@@ -75,9 +81,9 @@ function AccountPage() {
                 placeholder="Enter password"
                 required
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, password: e.target.value })
+                  setUserDetails({ ...userDetails, password: e.target.value })
                 }
-                value={regDetails.password}
+                value={userDetails.password}
               />
             </div>
           </div>
@@ -90,9 +96,9 @@ function AccountPage() {
                 placeholder="Enter Date of Birth"
                 required
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, dob: e.target.value })
+                  setUserDetails({ ...userDetails, dob: e.target.value })
                 }
-                value={regDetails.dob}
+                value={userDetails.dob}
               />
             </div>
             <div className="form-group">
@@ -104,9 +110,9 @@ function AccountPage() {
                 pattern="[0-9]{10}"
                 required
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, phone_number: e.target.value })
+                  setUserDetails({ ...userDetails, phone_number: e.target.value })
                 }
-                value={regDetails.phone_number}
+                value={userDetails.phone_number}
               />
             </div>
             <div className="form-group">
@@ -117,12 +123,12 @@ function AccountPage() {
                 placeholder="Street Address"
                 required
                 onChange={(e) =>
-                  setRegDetails({
-                    ...regDetails,
+                  setUserDetails({
+                    ...userDetails,
                     street_address: e.target.value,
                   })
                 }
-                value={regDetails.street_address}
+                value={userDetails.street_address}
               />
             </div>
             <div className="form-group" style={{ marginBottom: "20px" }}>
@@ -134,9 +140,9 @@ function AccountPage() {
                 className="select-item"
                 required
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, country: e.target.value })
+                  setUserDetails({ ...userDetails, country: e.target.value })
                 }
-                value={regDetails.country}
+                value={userDetails.country}
               >
                 <option selected=""> </option>
                 <option value="Canada">Canada</option>
@@ -157,9 +163,9 @@ function AccountPage() {
                 className="select-item"
                 required
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, prov: e.target.value })
+                  setUserDetails({ ...userDetails, prov: e.target.value })
                 }
-                value={regDetails.prov}
+                value={userDetails.prov}
               >
                 <optgroup label="Province">
                   <option selected=""> </option>
@@ -242,9 +248,9 @@ function AccountPage() {
                 placeholder="Enter Postal Code"
                 maxLength="6"
                 onChange={(e) =>
-                  setRegDetails({ ...regDetails, postal_code: e.target.value })
+                  setUserDetails({ ...userDetails, postal_code: e.target.value })
                 }
-                value={regDetails.postal_code}
+                value={userDetails.postal_code}
               />
             </div>
           </div>
