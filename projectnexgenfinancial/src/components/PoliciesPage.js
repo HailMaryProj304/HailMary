@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import { Router, Route, Link } from 'react-router-dom';
+
 function PoliciesPage() {
   const [policies, setPolicies] = useState([]);
   const [policiesContent, setContent] = useState([]);
@@ -18,7 +20,18 @@ function PoliciesPage() {
     });
     setContent(policies.map(item => (
 
-      <li key={item.id}>{item.type}</li>
+      <tr key={item.policy_id}>
+        <td>{item.policyNumber}</td>
+        <td>{item.provider}</td>
+        <td>{item.type}</td>
+        <td>{item.coverage_amount}</td>
+        <td><Link to = 
+            {{
+            pathname: "/PolicyPage",
+            state: {policy_id: item.policy_id}
+          }}
+        ><button type="button">Edit</button></Link></td>
+      </tr>
     )));
       
     
@@ -26,12 +39,21 @@ function PoliciesPage() {
     
   /*const thing = policies.map((policy, index) => (<div><li key={index}>{policy.id}</li></div>));*/
   
-
   return (
     <div>
-      <ul>
-        {policiesContent}
-      </ul>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>Policy Number</th>
+              <th>Provider</th>
+              <th>Type</th>
+              <th>Coverage</th>
+              </tr>
+            {policiesContent}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

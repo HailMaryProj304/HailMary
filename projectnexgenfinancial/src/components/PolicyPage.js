@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import '../CSS/style.css';
 import Policy from "../Policy";
 
 
 function PolicyPage() {
   
-  const [policy, setPolicy] = useState({policynum: "", firstName: "", lastName: "", provider: "", type: "", coverage: "", startDate: "", endDate: ""})
+  const [policy, setPolicy] = useState({});
+
+
+  const [userDetails, setUserDetails] = useState({
+    policynum: "", firstName: "", 
+  lastName: "", provider: "", type: "", coverage: "", startDate: "", endDate: "",
+  });
+
+  const policyId = (props) => {
+    return props.location.state.policy_id
+  }
 
   const submitHandler = async e => {
     e.preventDefault();
-    Policy(details);
+   
   }
+
+  
   
   
   return (
