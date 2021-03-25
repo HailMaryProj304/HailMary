@@ -2,12 +2,14 @@
 import React, {useState} from 'react';
 import LoginPage from './components/LoginPage';
 import MainPage from './components/MainPage';
+import AdminPage from './components/AdminPage';
 import axios from 'axios';
 import { Redirect, useHistory } from "react-router-dom";
 
 function Login() {
+    const [userType, setUserType] = useState("");
     //contains user object
-    const [user, setUser] = useState()
+    const [user, setUser] = useState("");
     //contains information of the error message that is sent
     const [error, setError] = useState("");
     const [email, setEmail] = useState("");
@@ -20,15 +22,16 @@ function Login() {
         .then((response) => {
             setError("");
             const testUser = response.data;
-            if(!(testUser === null)) {
+            console.log(testUser)
+            if(!(testUser === "")) {
                 setUser(testUser);
                 setEmail(details.email);
                 setPass(details.password);
-                
+                console.log("admin")
                 localStorage.setItem('user', JSON.stringify(testUser));
-                console.log(testUser);
                 console.log("logged in");
-                return "admin";
+                setUserType("admin");
+                return;
             }
         })
             
@@ -36,25 +39,23 @@ function Login() {
         .then((response) => {
             setError("");
             const testUser = response.data;
-            if(!(testUser === null)) {
+            console.log(testUser)
+            if(!(testUser === "")) {
                 setUser(testUser);
                 setEmail(details.email);
                 setPass(details.password);
-                
+                console.log("client")
                 localStorage.setItem('user', JSON.stringify(testUser));
-                console.log(testUser);
                 console.log("logged in");
-                return "client";
+                setUserType("client");
+                return;
             }
 
             else {
                 setError("Credentials are invalid")
-                return "";
+                setUserType("");
             }
-        })
-
-        
-       
+        })    
     
 }
     
@@ -68,14 +69,18 @@ function Login() {
     return (
         <div className="App">
             {/* if the email is null show this page */}
-            {(email != "") ? (
+            {(userType == "client") ? (
+                (console.log("CLIENT IS LOGGEED IN NOW")),
                 <div className="welcome">
                     <MainPage/>
                     {/* button calls logout function that sets fields to null */}
                     <button onClick={Logout}> Logout</button>
                 </div>
+            ) : (userType == "admin") ?(
+                (console.log("ADMIN IS LOGGEED IN NOW")),
+                <AdminPage/>
             ) : (
-
+                (console.log("IFELSE: "  + userType)),
                 <LoginPage Login={Validate} error={error}/>
             )}
         
