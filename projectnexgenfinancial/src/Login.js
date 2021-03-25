@@ -63,6 +63,7 @@ function Login() {
         console.log("Logout");
         setUser({});
         localStorage.clear();
+        return <Redirect to="/" />;
     }
 
     return (

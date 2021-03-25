@@ -35,6 +35,7 @@ import AccountPage from "./components/AccountPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PoliciesPage from "./components/PoliciesPage";
 import PolicyPage from "./components/PolicyPage";
+import MainPage from "./components/MainPage";
 
 function App() {
   return (
@@ -58,15 +59,15 @@ function App() {
             <Register />
           </Route>
           <Route path="/MainPage">
-            <Main />
+            <MainPage />
           </Route>
           <Route path="/Contact">
             <Contact />
           </Route>
-          <Route path="/components/PoliciesPage">
+          <Route path="/PoliciesPage">
             <PoliciesPage />
           </Route>
-          <Route path="/components/PolicyPage">
+          <Route path="/PolicyPage">
             <PolicyPage />
           </Route>
         </Switch>
