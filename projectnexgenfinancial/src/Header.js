@@ -10,6 +10,7 @@ function Header() {
         <a><Link to="/"><img src={logo} width="198px"></img></Link></a>
         <div className="navigation-items">
           <a className="navigation-item w-nav-link"><Link to="/about">About</Link></a>
+          <a className="navigation-item w-nav-link"><Link to="/services">Services</Link></a>
           <a className="navigation-item w-nav-link">Forms</a>
           <a className="navigation-item w-nav-link">FAQ</a>
           <a className="navigation-item w-nav-link"><Link to="/contact">Contact</Link></a>
