@@ -27,6 +27,7 @@ import Header from "./Header";
 import HeroButton from "./HeroButton";
 import Footer from "./Footer";
 import About from "./About";
+import Services from "./Services";
 import Login from "./Login";
 import Contact from "./components/Contact";
 import Register from "./components/Register";
@@ -36,6 +37,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PoliciesPage from "./components/PoliciesPage";
 import PolicyPage from "./components/PolicyPage";
 import MainPage from "./components/MainPage";
+import LifeInsurance from "./services/LifeInsurance";
+import MortgageInsurance from "./services/MortgageInsurance";
+import DisabilityInsurance from "./services/DisabilityInsurance";
+import CriticalIllnessInsurance from "./services/CriticalIllnessInsurance";
+import HealthInsurance from "./services/HealthInsurance";
+import LongTermCare from "./services/LongTermCare";
 
 import AdminPage from "./components/AdminPage";
 import RegisterAdmin from "./components/RegisterAdmin";
@@ -52,6 +59,9 @@ function App() {
           </Route>
           <Route path="/About">
             <About />
+          </Route>
+          <Route path="/Services">
+            <Services />
           </Route>
           <Route path="/Login">
             <Login />
