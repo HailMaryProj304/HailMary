@@ -1,14 +1,27 @@
-import React, {useState} from 'react';
-import axios from "axios";
+import React from "react";
+import RegisterAdmin from "./RegisterAdmin";
+import ClientList from "./ClientList";
+
+import Icon from "../CSS/Icon.png";
+import { Link } from "react-router-dom";
+import '../CSS/style.css';
+
 
 function AdminPage() {
         return (
-            <div>
-                create other admins
-                upload summaries for client people (post a url into database)
-                view all clients
-                
-            </div>
+           <div>
+             <Link to="/RegisterAdmin" style={{color:"black"}}>
+              <img src={Icon} width="50px"></img>
+              <h3>Register Admin</h3>
+              Register new admin users. <br />
+            </Link>
+
+            <Link to="/ClientList" style={{color:"black"}}>
+              <img src={Icon} width="50px"></img>
+              <h3>List all clients</h3>
+              List all clients in the database <br />
+            </Link>
+          </div>
         );   
 }
 

@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState, Component } from 'react'
 import Icon from "../CSS/Icon.png";
 import { Link } from "react-router-dom";
 import '../CSS/style.css';
+import axios from "axios";
 
 function MainPage() {
+  const [summary, setSummary] = useState(""); 
+  const fillUser = JSON.parse(localStorage.getItem('user'))
+  var URL = "";
+  axios.get("http://localhost:8080/summary/id/" + fillUser.client_id)
+  .then((response) => {
+      var URL = response.data;
+     setSummary(URL.path);
+    console.log("THE URL : " + URL.path);    
+  })
   
   return (
     <div className="MainPage">
@@ -18,11 +28,12 @@ function MainPage() {
             </Link>
           </div>
           <div className="grid-items">
-            <Link to="/summaries" style={{color:"black"}}>
-              <img src={Icon} width="50px"></img>
-              <h3>View Insurance Summary</h3>
-              View your insurance summary.
-            </Link>
+          
+         {(<a href = {summary}> <img src={Icon} width="50px"></img></a>)}
+         <h3 style={{ fontSize: "1.15rem" }}>
+           Summary download
+         </h3>
+         If summary is available click here to download
           </div>
           <div className="grid-items">
             <Link to="/contact" style={{color:"black"}}>

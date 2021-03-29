@@ -37,6 +37,10 @@ import PoliciesPage from "./components/PoliciesPage";
 import PolicyPage from "./components/PolicyPage";
 import MainPage from "./components/MainPage";
 
+import AdminPage from "./components/AdminPage";
+import RegisterAdmin from "./components/RegisterAdmin";
+import ClientList from "./components/ClientList";
+
 function App() {
   return (
     <div className="App">
@@ -69,6 +73,15 @@ function App() {
           </Route>
           <Route path="/PolicyPage">
             <PolicyPage />
+          </Route>
+          <Route path="/AdminPage">
+            <AdminPage />
+          </Route>
+          <Route path="/RegisterAdmin">
+            <RegisterAdmin />
+          </Route>
+          <Route path="/ClientList">
+            <ClientList />
           </Route>
         </Switch>
       </Router>

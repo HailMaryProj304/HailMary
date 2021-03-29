@@ -77,11 +77,11 @@ function Login() {
                     {/* button calls logout function that sets fields to null */}
                     <button onClick={Logout}> Logout</button>
                 </div>
-            ) : (userType == "admin") ?(
+            ) : (userType == "admin") ? (
                 (console.log("ADMIN IS LOGGEED IN NOW")),
                 <AdminPage/>
             ) : (
-                (console.log("IFELSE: "  + userType)),
+                (console.log("User type: " + userType)),
                 <LoginPage Login={Validate} error={error}/>
             )}
         
