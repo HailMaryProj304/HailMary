@@ -90,11 +90,13 @@
 }
 .checkbox {
   margin-left: 10px;
-  position: absolute;
-  right: 0;
+  max-width: 50px;
 }
 .consultation-checkboxes {
   margin-bottom: 2rem;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
 }
 .Contact-Form {
   align-self: center;
@@ -160,6 +162,7 @@ form {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(background.png);
   background-position: center;
+  background-size: cover;
   height: 100vh;
   position: relative;
   width: 100vw;
@@ -361,7 +364,7 @@ p {
   margin: 0;
 }
 html {
-  background-image: url(/src/CSS/shapes.png);
+  background: url(/src/CSS/shapes.png) no-repeat center center fixed;
   min-height: 100%;
   position: relative;
 }
