@@ -25,6 +25,7 @@ const LinksWrapper = styled.ul`
   padding-bottom: 5%;
   border-radius: 5px;
   z-index:999;
+  box-shadow: 0 2px 0 rgba(15, 15, 15, 0.13);
 `;
 
 const LinkItem = styled.li`

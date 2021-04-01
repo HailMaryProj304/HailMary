@@ -1,0 +1,3 @@
+2021-04-01 14:02:33,513 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 11.0.10 on DESKTOP-EUP6709 with PID 20196 (D:\CAPSTONE PROJECT\HailMary\HailMaryAPI\HailMaryAPI\target\classes started by rayfi in D:\CAPSTONE PROJECT\HailMary)
+2021-04-01 14:02:33,517 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-01 14:02:40,852 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 8.135 seconds (JVM running for 8.86)
