@@ -2,48 +2,89 @@
 import React, {useState} from 'react';
 import LoginPage from './components/LoginPage';
 import MainPage from './components/MainPage';
+import AdminPage from './components/AdminPage';
 import axios from 'axios';
+import { Redirect, useHistory } from "react-router-dom";
 
 function Login() {
-
-    //contains information of the user
-    const [user, setUser] = useState({username: "", email: ""});
+    const [userType, setUserType] = useState("");
+    //contains user object
+    const [user, setUser] = useState("");
     //contains information of the error message that is sent
     const [error, setError] = useState("");
-
+    const [email, setEmail] = useState("");
+    const [password, setPass] = useState(""); 
+    const history = useHistory();
     //function login pass in details
     const Validate = details => {
         console.log(details);
-
+        axios.get("http://localhost:8080/admin/login/" + details.username + "&" + details.password)
+        .then((response) => {
+            setError("");
+            const testUser = response.data;
+            console.log(testUser)
+            if(!(testUser === "")) {
+                setUser(testUser);
+                setEmail(details.email);
+                setPass(details.password);
+                console.log("admin")
+                localStorage.setItem('user', JSON.stringify(testUser));
+                console.log("logged in");
+                setUserType("admin");
+                return;
+            }
+        })
+            
         axios.get("http://localhost:8080/clients/login/" + details.username + "&" + details.password)
         .then((response) => {
             setError("");
             const testUser = response.data;
-            setUser(testUser);
-        }, (error) => {
-            setError("Your credentials are invalid");
-        });
-    }
+            console.log(testUser)
+            if(!(testUser === "")) {
+                setUser(testUser);
+                setEmail(details.email);
+                setPass(details.password);
+                console.log("client")
+                localStorage.setItem('user', JSON.stringify(testUser));
+                console.log("logged in");
+                setUserType("client");
+                return;
+            }
 
+            else {
+                setError("Credentials are invalid")
+                setUserType("");
+            }
+        })    
+    
+}
+    
     //function logout
     const Logout = () => {
         console.log("Logout");
-        setUser({username: "", email: ""});
+        setUser({});
+        localStorage.clear();
+        return <Redirect to="/" />;
     }
 
     return (
         <div className="App">
             {/* if the email is null show this page */}
-            {(user.email != "") ? (
+            {(userType == "client") ? (
+                (console.log("CLIENT IS LOGGEED IN NOW")),
                 <div className="welcome">
                     <MainPage/>
                     {/* button calls logout function that sets fields to null */}
                     <button onClick={Logout}> Logout</button>
                 </div>
+            ) : (userType == "admin") ? (
+                (console.log("ADMIN IS LOGGEED IN NOW")),
+                <AdminPage/>
             ) : (
-
+                (console.log("User type: " + userType)),
                 <LoginPage Login={Validate} error={error}/>
             )}
+        
         </div>
     )}
 export default Login;

@@ -25,6 +25,7 @@
 import React, { useState } from "react";
 import HeroButton from "./HeroButton";
 import About from "./About";
+import Services from "./Services";
 import Login from "./Login";
 import Contact from "./components/Contact";
 import Register from "./components/Register";
@@ -32,6 +33,19 @@ import Main from "./components/MainPage";
 import AccountPage from "./components/AccountPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar } from "./components/navbar";
+import PoliciesPage from "./components/PoliciesPage";
+import PolicyPage from "./components/PolicyPage";
+import MainPage from "./components/MainPage";
+import LifeInsurance from "./services/LifeInsurance";
+import MortgageInsurance from "./services/MortgageInsurance";
+import DisabilityInsurance from "./services/DisabilityInsurance";
+import CriticalIllnessInsurance from "./services/CriticalIllnessInsurance";
+import HealthInsurance from "./services/HealthInsurance";
+import LongTermCare from "./services/LongTermCare";
+
+import AdminPage from "./components/AdminPage";
+import RegisterAdmin from "./components/RegisterAdmin";
+import ClientList from "./components/ClientList";
 
 function App() {
   return (
@@ -45,6 +59,9 @@ function App() {
           <Route path="/About">
             <About />
           </Route>
+          <Route path="/Services">
+            <Services />
+          </Route>
           <Route path="/Login">
             <Login />
           </Route>
@@ -55,10 +72,25 @@ function App() {
             <Register />
           </Route>
           <Route path="/MainPage">
-            <Main />
+            <MainPage />
           </Route>
           <Route path="/Contact">
             <Contact />
+          </Route>
+          <Route path="/PoliciesPage">
+            <PoliciesPage />
+          </Route>
+          <Route path="/PolicyPage">
+            <PolicyPage />
+          </Route>
+          <Route path="/AdminPage">
+            <AdminPage />
+          </Route>
+          <Route path="/RegisterAdmin">
+            <RegisterAdmin />
+          </Route>
+          <Route path="/ClientList">
+            <ClientList />
           </Route>
         </Switch>
       </Router>

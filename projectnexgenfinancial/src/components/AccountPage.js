@@ -1,7 +1,32 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, Component } from "react";
 import "../CSS/style.css";
 
 function AccountPage() {
+  const [user, setUser] = useState("")
+  const fillUser = JSON.parse(localStorage.getItem('user'))
+  var clientId
+  const [userDetails, setUserDetails] = useState({
+    client_id: fillUser.client_id,
+    email: fillUser.email,
+    first_name: fillUser.first_name,
+    last_name: fillUser.last_name,
+    dob: fillUser.dob,
+    phone_number: fillUser.phone_number,
+    street_address: fillUser.street_address,
+    prov: fillUser.prov,
+    country: fillUser.country,
+    postal_code: fillUser.postal_code,
+    password: fillUser.password,
+  });
+ 
+  const submitHandler = (e) => {
+    e.preventDefault();
+    //make get Id by email axios here
+    axios.put("http://localhost:8080/clients/update/", userDetails)
+  }
+
+
   return (
     <div className="container" style={{display:"flex", justifyContent:"space-between"}}>
       <div className="split left">
@@ -23,7 +48,7 @@ function AccountPage() {
         </div>
       </div>
       <div className="split right">
-      <div className="form-section">
+        <div className="form-section">
             <label htmlFor="Date-Of-Birth">Date of Birth</label><br />
             <input type="date" placeholder="Date of Birth" className='account-form' disabled /> <br />
         </div>
@@ -41,13 +66,13 @@ function AccountPage() {
         </div>
         <div className="form-section">
             <label htmlFor="Province/State">Province/State</label><br />
-            <input type="text" placeholder="User Provice/State" className='account-form' disabled /> <br />
+            <input type="text" placeholder="User Province/State" className='account-form' disabled /> <br />
         </div>
         <div className="form-section">
             <label htmlFor="Postal Code">Postal Code</label><br />
             <input type="text" placeholder="User Postal Code" className='account-form' disabled /> <br />
         </div>
-      </div>
+    </div>
     </div>
   );
 }

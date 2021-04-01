@@ -5,6 +5,7 @@ import '../CSS/style.css';
 
 
 function Register() {
+
   const [regDetails, setRegDetails] = useState({
     email: "",
     first_name: "",
@@ -24,15 +25,15 @@ function Register() {
    
     axios.get("http://localhost:8080/clients/login/" + regDetails.email + "&" + regDetails.password)
         .then((response) => {
-            console.log("Email is Taken")
-            setError("Email is taken")
-        }, (error) => {
           const res = axios.post(
-            "http://localhost:8080/clients/RegisterClient",regDetails)
+            "http://localhost:8080/clients/registerClient",regDetails)
             setError("")
             console.log("TEST1")
             history.push("/login");
             return <Redirect to= 'src\Login.js' />
+        }, (error) => {
+          console.log("Email is Taken")
+            setError("Email is taken")
         });
 
   }
