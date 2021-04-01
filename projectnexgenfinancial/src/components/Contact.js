@@ -21,8 +21,9 @@ function Contact() {
           <input type="text" className="form-control" />
         </div>
         <h2 className="form-center" htmlFor="consultation" style={{marginBottom:'2rem'}}>Request a Consultation</h2>
+        <div className="contactForm">
         <div className="consultation-checkboxes form-center">
-          Personal Insurance
+          <p>Personal Insurance</p>
           <input
             className="checkbox"
             type="checkbox"
@@ -69,6 +70,7 @@ function Contact() {
         <div className="consultation-checkboxes form-center">
           Other
           <input className="checkbox" type="checkbox" name="Other" id="other" />
+        </div>
         </div>
       </div>
     </div>

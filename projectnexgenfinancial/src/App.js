@@ -23,9 +23,7 @@
 // }
 
 import React, { useState } from "react";
-import Header from "./Header";
 import HeroButton from "./HeroButton";
-import Footer from "./Footer";
 import About from "./About";
 import Login from "./Login";
 import Contact from "./components/Contact";
@@ -33,12 +31,13 @@ import Register from "./components/Register";
 import Main from "./components/MainPage";
 import AccountPage from "./components/AccountPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Navbar } from "./components/navbar";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <HeroButton />
@@ -63,7 +62,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <Footer />
     </div>
   );
 }

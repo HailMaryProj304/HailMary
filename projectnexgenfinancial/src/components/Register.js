@@ -40,12 +40,12 @@ function Register() {
   return (
     <div>
       <form onSubmit={submitHandler}>
-        <div className="innerForm">
+      <div className="container" style={{display:"flex", justifyContent:"center"}}>
           <h2 className="center-title">Register
           {(error != "") ? (<div className="error">{error}</div>) : ""}</h2>
           <div className="split left">
             <div className="form-group">
-              <label>First name</label>
+              <label>First name</label><br />
               <input
                 type="text"
                 className="form-control"
@@ -58,7 +58,7 @@ function Register() {
               />
             </div>
             <div className="form-group">
-              <label>Last name</label>
+              <label>Last name</label><br />
               <input
                 type="text"
                 className="form-control"
@@ -71,7 +71,7 @@ function Register() {
               />
             </div>
             <div className="form-group">
-              <label>Email Address</label>
+              <label>Email Address</label><br />
               <input
                 type="email"
                 className="form-control"
@@ -84,7 +84,7 @@ function Register() {
               />
             </div>
             <div className="form-group">
-              <label>Password</label>
+              <label>Password</label><br />
               <input
                 type="password"
                 className="form-control"
@@ -99,7 +99,7 @@ function Register() {
           </div>
           <div className="split right">
             <div className="form-group">
-              <label>Date of Birth</label>
+              <label>Date of Birth</label><br />
               <input
                 type="date"
                 className="form-control"
@@ -112,7 +112,7 @@ function Register() {
               />
             </div>
             <div className="form-group">
-              <label>Phone Number</label>
+              <label>Phone Number</label><br />
               <input
                 type="tel"
                 className="form-control"
@@ -126,7 +126,7 @@ function Register() {
               />
             </div>
             <div className="form-group">
-              <label>Street Address</label>
+              <label>Street Address</label><br />
               <input
                 type="text"
                 className="form-control"
@@ -251,7 +251,7 @@ function Register() {
               </select>
             </div>
             <div className="form-group">
-              <label>Postal Code </label>
+              <label>Postal Code </label><br />
               <input
                 type="text"
                 className="form-control"
