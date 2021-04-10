@@ -1,8 +1,30 @@
 import axios from "axios";
-import React, { useState, Component } from "react";
+import React, { useEffect, useState, Component } from "react";
+import { useHistory } from "react-router-dom";
 import "../CSS/style.css";
 
 function AccountPage() {
+  let history = useHistory();
+  const redirect = () => {
+    console.log("Logout");
+    localStorage.clear();
+    history.push('/')
+  }
+  const getUser= async () => {
+    try {
+          if(!localStorage.getItem('user'))
+              {
+                redirect();
+              }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+  useEffect( () => {
+   
+    getUser();
+  }, []);
+
   const [user, setUser] = useState("")
   const fillUser = JSON.parse(localStorage.getItem('user'))
   var clientId

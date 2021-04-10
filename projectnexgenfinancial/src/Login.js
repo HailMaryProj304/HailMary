@@ -15,6 +15,9 @@ function Login() {
     const [email, setEmail] = useState("");
     const [password, setPass] = useState(""); 
     const history = useHistory();
+    const redirect = () => {
+        history.push('/')
+    }
     //function login pass in details
     const Validate = details => {
         console.log(details);
@@ -29,9 +32,11 @@ function Login() {
                 setPass(details.password);
                 console.log("admin")
                 localStorage.setItem('user', JSON.stringify(testUser));
+                localStorage.setItem('type', JSON.stringify('admin'));
                 console.log("logged in");
                 setUserType("admin");
-                return;
+                redirect();
+                window.location.reload();
             }
         })
             
@@ -48,9 +53,9 @@ function Login() {
                 localStorage.setItem('user', JSON.stringify(testUser));
                 console.log("logged in");
                 setUserType("client");
-                return;
+                redirect();
+                window.location.reload();
             }
-
             else {
                 setError("Credentials are invalid")
                 setUserType("");
@@ -67,19 +72,22 @@ function Login() {
         return <Redirect to="/" />;
     }
 
+
+
     return (
         <div className="App">
             {/* if the email is null show this page */}
             {(userType == "client") ? (
                 (console.log("CLIENT IS LOGGEED IN NOW")),
                 <div className="welcome">
-                    <MainPage/>
+                    <Redirect to="/MainPage" />
                     {/* button calls logout function that sets fields to null */}
-                    <button onClick={Logout}> Logout</button>
                 </div>
             ) : (userType == "admin") ? (
                 (console.log("ADMIN IS LOGGEED IN NOW")),
-                <AdminPage/>
+                <div>
+                    <Redirect to="/AdminPage" />
+                </div>
             ) : (
                 (console.log("User type: " + userType)),
                 <LoginPage Login={Validate} error={error}/>

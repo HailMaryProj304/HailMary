@@ -1,10 +1,32 @@
 import React, {useState, useEffect} from 'react';
+import { useHistory } from "react-router-dom";
 import Axios from 'axios';
 import axios from 'axios';
 
 var test = "NOT WORKING";
 
 function ClientList() {
+  let history = useHistory();
+  const redirect = () => {
+    console.log("Logout");
+    localStorage.clear();
+    history.push('/')
+  }
+  const getUser= async () => {
+    try {
+          if(!localStorage.getItem('type'))
+              {
+                redirect();
+              }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+  useEffect( () => {
+   
+    getUser();
+  }, []);
+
     const [result, setResult] = useState([]);
     const [URL, setURL] = useState({
       summary_id: "",

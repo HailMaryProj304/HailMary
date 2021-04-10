@@ -1,10 +1,29 @@
 import axios from "axios";
-import React, { useState, Component } from "react";
+import React, { useEffect, useState, Component } from "react";
 import { Redirect, useHistory } from "react-router-dom";
 import '../CSS/style.css';
 
 
 function RegisterAdmin() {
+  const redirect = () => {
+    console.log("Logout");
+    localStorage.clear();
+    history.push('/')
+  }
+  const getUser= async () => {
+    try {
+          if(!localStorage.getItem('type'))
+              {
+                redirect();
+              }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+  useEffect( () => {
+   
+    getUser();
+  }, []);
 
   const [regDetails, setRegDetails] = useState({
     email: "",

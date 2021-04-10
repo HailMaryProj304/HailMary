@@ -1,10 +1,31 @@
-import React, { useState, Component } from 'react'
+import React, { useEffect, useState, Component } from 'react'
 import Icon from "../CSS/Icon.png";
-import { Link } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import '../CSS/style.css';
 import axios from "axios";
 
 function MainPage() {
+  let history = useHistory();
+  const redirect = () => {
+    console.log("Logout");
+    localStorage.clear();
+    history.push('/')
+  }
+  const getUser= async () => {
+    try {
+          if(!localStorage.getItem('user'))
+              {
+                redirect();
+              }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+  useEffect( () => {
+   
+    getUser();
+  }, []);
+
   const [summary, setSummary] = useState(""); 
   const fillUser = JSON.parse(localStorage.getItem('user'))
   var URL = "";

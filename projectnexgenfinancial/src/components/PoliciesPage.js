@@ -1,20 +1,29 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import { Router, Route, Link } from 'react-router-dom';
+import { useHistory, Route, Link } from 'react-router-dom';
 
 function PoliciesPage() {
+  let history = useHistory();
+  const redirect = () => {
+    console.log("Logout");
+    localStorage.clear();
+    history.push('/')
+  }
+
   const [policies, setPolicies] = useState([]);
 
   const getPolicies = async () => {
     try {
+          if(!localStorage.getItem('user'))
+              {
+                redirect();
+              }
           const user = await JSON.parse(localStorage.getItem('user'));
           console.log(user.email);
-        
           const userPolicies = await axios.get("http://localhost:8080/policies/email:" + user.email);
-          
           setPolicies(userPolicies.data);
           console.log(userPolicies.data);
-
+          
     } catch (err) {
       console.error(err.message);
     }
