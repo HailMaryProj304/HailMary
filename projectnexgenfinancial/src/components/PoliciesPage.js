@@ -20,8 +20,12 @@ function PoliciesPage() {
   });
 
   function handleClick(givenEmail, givenName, givenTopic) {
-    setEmailDetails({ email: givenEmail, name: givenName, topic: givenTopic });
-    console.log(emailDetails);
+    console.log(givenEmail, givenName, givenTopic);
+    setEmailDetails({
+      email: givenEmail, 
+      name: givenName, 
+      topic: givenTopic});
+    console.log(emailDetails)
     axios.post("http://localhost:8080/clients/sendEmail", emailDetails);
     alert("Email Sent");
   }

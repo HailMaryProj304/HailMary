@@ -73,10 +73,10 @@ function MainPage() {
             </Link>
           </div>
           <div className="grid-items">
-            <Link to="/quotes" style={{color:"black"}}>
+            <Link to="/Quote" style={{color:"black"}}>
               <img src={Icon} width="50px"></img>
-              <h3>Your Quotes</h3>
-              View the quotes that NexGen has given you.
+              <h3>Quoting Software</h3>
+              Get Insurance Quotes
             </Link>
           </div>
           <div className="grid-items">
