@@ -78,6 +78,7 @@ function ClientList() {
                   <th>Client Name</th>
                   <th>Client Email</th>
                   <th>Delete Client</th>
+                  <th>View Policies</th>
                   <th>Insert Summary</th>
                   <th>Submit</th>
                 </tr>
