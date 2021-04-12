@@ -71,19 +71,22 @@ function ClientList() {
 
     return (
         <div>
-          {console.log(URL)}
+          <table>
+            <tbody>
+          <tr>
+            <th>Client Name</th>
+            <th>Client Email</th>
+             <th>Delete Client</th>
+            <th>Insert Summary</th>
+            <th>Submit</th>
+             </tr>
+             </tbody>
+          </table>
             {result&&result.map(client => {
               return (
                 <form>
                 <table>
                     <tbody>
-                      <tr>
-                        <th>Client Name</th>
-                        <th>Client Email</th>
-                        <th>Delete Client</th>
-                        <th>Insert Summary</th>
-                        <th>Submit</th>
-                      </tr>
                       <tr>
                       <td key={client.client_id}>{client.first_name + " " +  client.last_name}</td>
                       <td>{client.email}</td>
