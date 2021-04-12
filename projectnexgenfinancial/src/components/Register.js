@@ -3,7 +3,6 @@ import React, { useState, Component } from "react";
 import { Redirect, useHistory } from "react-router-dom";
 import '../CSS/style.css';
 
-
 function Register() {
 
   const [regDetails, setRegDetails] = useState({

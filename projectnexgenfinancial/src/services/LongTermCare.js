@@ -27,7 +27,7 @@ function LongTermCare() {
       <br></br>
       <b>This benefit is available on either an individual or group basis.</b>
       <br></br>
-      <a><Link to="/services" className="button w-inline-block">Back</Link></a>
+      <a><Link to="/services" className="button w-inline-block" style={{marginTop:"1rem"}}>Back</Link></a>
     </div>
   );
 }

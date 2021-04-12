@@ -1,18 +1,18 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios';
-import { useHistory, Route, Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useHistory, Route, Link } from "react-router-dom";
 
 function PoliciesPage() {
   let history = useHistory();
   const redirect = () => {
     console.log("Logout");
     localStorage.clear();
-    history.push('/')
-  }
+    history.push("/");
+  };
 
   const [policies, setPolicies] = useState([]);
   const [testUser, setTestUser] = useState([]);
-  
+
   const [emailDetails, setEmailDetails] = useState({
     email: "",
     name: "",
@@ -20,76 +20,98 @@ function PoliciesPage() {
   });
 
   function handleClick(givenEmail, givenName, givenTopic) {
-    setEmailDetails({email: givenEmail, name: givenName, topic: givenTopic})
-    console.log(emailDetails)
+    setEmailDetails({ email: givenEmail, name: givenName, topic: givenTopic });
+    console.log(emailDetails);
     axios.post("http://localhost:8080/clients/sendEmail", emailDetails);
-    alert("Email Sent")
+    alert("Email Sent");
   }
   const getPolicies = async () => {
     try {
-          if(!localStorage.getItem('user'))
-              {
-                redirect();
-              }
-          const user = await JSON.parse(localStorage.getItem('user'));
-          setTestUser(user);
-          console.log(user.email);
-          const userPolicies = await axios.get("http://localhost:8080/policies/email:" + user.email);
-          setPolicies(userPolicies.data);
-          console.log(userPolicies.data);
-          
+      if (!localStorage.getItem("user")) {
+        redirect();
+      }
+      const user = await JSON.parse(localStorage.getItem("user"));
+      setTestUser(user);
+      console.log(user.email);
+      const userPolicies = await axios.get(
+        "http://localhost:8080/policies/email:" + user.email
+      );
+      setPolicies(userPolicies.data);
+      console.log(userPolicies.data);
     } catch (err) {
       console.error(err.message);
     }
   };
-  useEffect( () => {
-   
+  useEffect(() => {
     getPolicies();
   }, []);
-    
+
   /*const thing = policies.map((policy, index) => (<div><li key={index}>{policy.id}</li></div>));*/
-  
+
   return (
     <div>
-      <div>
+      <form style={{ marginTop: "10vh", overflowX: "auto" }}>
         <table>
-          <tbody>
+          <thead>
             <tr>
               <th>Policy Number</th>
               <th>Provider</th>
               <th>Type</th>
               <th>Coverage</th>
-              </tr>
-            {policies.map(item => (
-
+              <th>View Policy</th>
+              <th>Request Assistance</th>
+            </tr>
+          </thead>
+          <tbody>
+            {policies.map((item) => (
               <tr key={item.policy_id}>
-                <td>{item.policyNumber}</td>
-                <td>{item.provider}</td>
-                <td>{item.type}</td>
-                <td>{item.coverage_amount}</td>
-                <td><Link to = 
-                    {{
-                    pathname: "/PolicyPage",
-                    state: {
-                      policyNumber : item.policyNumber,
-                      first_name : item.first_name,
-                      last_name : item.last_name,
-                      provider : item.provider,
-                      type : item.type,
-                      coverage : item.coverage_amount,
-                      start_date : item.start_date,
-                      end_date : item.end_date
+                <td className="policiesTable">{item.policyNumber}</td>
+                <td className="policiesTable">{item.provider}</td>
+                <td className="policiesTable">{item.type}</td>
+                <td className="policiesTable">{item.coverage_amount}</td>
+                <td className="policiesTable">
+                  <Link
+                    to={{
+                      pathname: "/PolicyPage",
+                      state: {
+                        policyNumber: item.policyNumber,
+                        first_name: item.first_name,
+                        last_name: item.last_name,
+                        provider: item.provider,
+                        type: item.type,
+                        coverage: item.coverage_amount,
+                        start_date: item.start_date,
+                        end_date: item.end_date,
+                      },
+                    }}
+                  >
+                    <button type="button" className="tableButton">View</button>
+                  </Link>
+                </td>
+                <td className="policiesTable">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      handleClick(
+                        testUser.email,
+                        testUser.first_name + " " + testUser.last_name,
+                        testUser.first_name +
+                          " " +
+                          testUser.last_name +
+                          " requires assistance regarding policy " +
+                          item.policyNumber
+                      )
                     }
-                  }}
-                ><button type="button">View</button></Link></td>
-                <td>
-                  <button type="button" onClick={() => handleClick(testUser.email, testUser.first_name + " " + testUser.last_name, testUser.first_name + " " + testUser.last_name + " requires assistance regarding policy " + item.policyNumber) }>Need Contact For This Policy</button>
+                    className="tableButton"
+                  >
+                    Need Contact For This Policy
+                  </button>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
-      </div>
+      </form>
     </div>
   );
 }

@@ -4,6 +4,8 @@ import {useHistory} from "react-router-dom";
 import "../CSS/style.css";
 import { findRenderedComponentWithType } from "react-dom/test-utils";
 
+document.body.style.overflowX = "hidden";
+
 function AccountPage() {
   
   let history = useHistory();
@@ -52,13 +54,13 @@ function AccountPage() {
 
 
   return (
-    <div>
-      <form onSubmit={submitHandler}>
-        <div className="innerForm">
+    <div className="container" style={{display:"flex", justifyContent:"center"}}>
+      <form onSubmit={submitHandler} className="account-form">
           <h2 className="center-title">Change Account Information</h2>
           <div className="split left">
             <div className="form-group">
-              <label>First name</label>
+              <label>First Name</label>
+              <br />
               <input
                 type="text"
                 className="form-control"
@@ -71,7 +73,8 @@ function AccountPage() {
               />
             </div>
             <div className="form-group">
-              <label>Last name</label>
+              <label>Last Name</label>
+              <br />
               <input
                 type="text"
                 className="form-control"
@@ -85,6 +88,7 @@ function AccountPage() {
             </div>
             <div className="form-group">
               <label>Email Address</label>
+              <br />
               <input
                 type="email"
                 className="form-control"
@@ -98,6 +102,7 @@ function AccountPage() {
             </div>
             <div className="form-group">
               <label>Password</label>
+              <br />
               <input
                 type="password"
                 className="form-control"
@@ -113,6 +118,7 @@ function AccountPage() {
           <div className="split right">
             <div className="form-group">
               <label>Date of Birth</label>
+              <br />
               <input
                 type="date"
                 className="form-control"
@@ -126,6 +132,7 @@ function AccountPage() {
             </div>
             <div className="form-group">
               <label>Phone Number</label>
+              <br />
               <input
                 type="tel"
                 className="form-control"
@@ -140,6 +147,7 @@ function AccountPage() {
             </div>
             <div className="form-group">
               <label>Street Address</label>
+              <br />
               <input
                 type="text"
                 className="form-control"
@@ -265,6 +273,7 @@ function AccountPage() {
             </div>
             <div className="form-group">
               <label>Postal Code </label>
+              <br />
               <input
                 type="text"
                 className="form-control"
@@ -277,10 +286,9 @@ function AccountPage() {
               />
             </div>
           </div>
-          <div className="register-button">
+          <div className="change-button">
             <input type="submit" className="button" value="Change"></input>
           </div>
-        </div>
       </form>
     </div>
   );

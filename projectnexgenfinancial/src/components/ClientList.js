@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import Axios from 'axios';
-import axios from 'axios';
+import Axios from "axios";
+import axios from "axios";
 
 var test = "NOT WORKING";
 
@@ -10,34 +10,32 @@ function ClientList() {
   const redirect = () => {
     console.log("Logout");
     localStorage.clear();
-    history.push('/')
-  }
-  const getUser= async () => {
+    history.push("/");
+  };
+  const getUser = async () => {
     try {
-          if(!localStorage.getItem('type'))
-              {
-                redirect();
-              }
+      if (!localStorage.getItem("type")) {
+        redirect();
+      }
     } catch (err) {
       console.error(err.message);
     }
   };
-  useEffect( () => {
-   
+  useEffect(() => {
     getUser();
   }, []);
 
-    const [result, setResult] = useState([]);
-    const [URL, setURL] = useState({
-      summary_id: "",
-      client: "",
-      path: "",
-    });
+  const [result, setResult] = useState([]);
+  const [URL, setURL] = useState({
+    summary_id: "",
+    client: "",
+    path: "",
+  });
 
   function deleteClient(client, e) {
     e.preventDefault();
     console.log(client);
-    axios.put("http://localhost:8080/clients/delete", client)
+    axios.put("http://localhost:8080/clients/delete", client);
     window.location.reload();
   }
 
@@ -47,59 +45,80 @@ function ClientList() {
       summary_id: client.client_id,
       client: client,
       path: e.target.value,
-    })
+    });
   }
 
   function updateSummary() {
-    console.log("added summary?")
-    axios.post("http://localhost:8080/summary/RegisterSummary/", URL)
+    console.log("added summary?");
+    axios.post("http://localhost:8080/summary/RegisterSummary/", URL);
   }
 
-   const getUsers = async () => {
-      const response = await Axios("http://localhost:8080/clients/allClients");
-      setResult(response.data);
-        //console.log(list)
-    }
+  const getUsers = async () => {
+    const response = await Axios("http://localhost:8080/clients/allClients");
+    setResult(response.data);
+    //console.log(list)
+  };
 
-  useEffect( () => {
+  useEffect(() => {
     console.log(result);
-  }, [result])
+  }, [result]);
 
-  useEffect( () => {
+  useEffect(() => {
     getUsers();
-  }, [])
+  }, []);
 
-    return (
-        <div>
-          <table>
-            <tbody>
-          <tr>
-            <th>Client Name</th>
-            <th>Client Email</th>
-             <th>Delete Client</th>
-            <th>Insert Summary</th>
-            <th>Submit</th>
-             </tr>
-             </tbody>
-          </table>
-            {result&&result.map(client => {
-              return (
-                <form>
-                <table>
-                    <tbody>
-                      <tr>
-                      <td key={client.client_id}>{client.first_name + " " +  client.last_name}</td>
-                      <td>{client.email}</td>
-                      <td><button onClick={(e) => deleteClient(client, e)}>Delete Client</button></td>
-                      <td><input type="text" onChange={(e) => updatePath(client, e)}/></td>
-                      <td><input type="button" value="Update Summary" onClick={(e) => updateSummary(e)}/></td>
+  return (
+    <div>
+      {result &&
+        result.map((client) => {
+          return (
+            <form style={{ marginTop: "10vh", overflowX: "auto" }}>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Client Name</th>
+                    <th>Client Email</th>
+                    <th>Delete Client</th>
+                    <th>Insert Summary</th>
+                    <th>Submit</th>
                   </tr>
-                  </tbody>
-                </table>
-                </form>
-              )
-            })}
-        </div>
-    )
+                </thead>
+                <tbody>
+                  <tr>
+                    <td key={client.client_id} className="clientTable">
+                      {client.first_name + " " + client.last_name}
+                    </td>
+                    <td>{client.email}</td>
+                    <td>
+                      <button
+                        onClick={(e) => deleteClient(client, e)}
+                        className="deleteButton"
+                      >
+                        Delete Client
+                      </button>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        onChange={(e) => updatePath(client, e)}
+                        style={{ width: "200px" }}
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="button"
+                        value="Update Summary"
+                        onClick={(e) => updateSummary(e)}
+                        style={{ width: "200px" }}
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          );
+        })}
+    </div>
+  );
 }
-export default ClientList
+export default ClientList;

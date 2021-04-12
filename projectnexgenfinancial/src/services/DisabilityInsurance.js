@@ -28,15 +28,19 @@ function DisabilityInsurance() {
           <li>53 in 100 adults over 75 reported disability</li>
         </ul>
         (Source: Statcan)
-
+      <br></br>
         In 2006, 4.4 million Canadians living in households reported having an activity limitation, yielding a disability rate of 14.3%.
       </p>
       <br></br>
-      <b>So the statistics tell the story. 24 out of 100 people between ages 25 & 64 will face a disability period in their working lives... Nearly 1 in 4 !! The CPP Disability maximum payout for 2011 is $1,153.37 per month. The average payout is $822.32. (Source: Service Canada) This of course assumes that you qualify for disability.</b>
+      <b>So the statistics tell the story. 24 out of 100 people between ages 25 & 64 will face a disability period in their working lives... Nearly 1 in 4!!
+      <br />
+      The CPP Disability maximum payout for 2011 is $1,153.37 per month. The average payout is $822.32. (Source: Service Canada)
+      <br />
+      This of course assumes that you qualify for disability.</b>
       <br></br>
       <b>Are you and your family properly protected?</b>
       <br></br>
-      <a><Link to="/services" className="button w-inline-block">Back</Link></a>
+      <a><Link to="/services" className="button w-inline-block" style={{marginTop:"1rem"}}>Back</Link></a>
     </div>
   );
 }
