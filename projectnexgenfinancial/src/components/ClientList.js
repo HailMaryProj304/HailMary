@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link  } from "react-router-dom";
 import Axios from 'axios';
 import axios from 'axios';
 
@@ -70,35 +70,32 @@ function ClientList() {
   }, [])
 
     return (
-        <div>
+  <div>
+        <form>
           <table>
-            <tbody>
-          <tr>
-            <th>Client Name</th>
-            <th>Client Email</th>
-             <th>Delete Client</th>
-            <th>Insert Summary</th>
-            <th>Submit</th>
-             </tr>
-             </tbody>
+              <tbody>
+                <tr>
+                  <th>Client Name</th>
+                  <th>Client Email</th>
+                  <th>Delete Client</th>
+                  <th>Insert Summary</th>
+                  <th>Submit</th>
+                </tr>
+              {result.map(client => (
+                <tr>
+                <td key={client.client_id}>{client.first_name + " " +  client.last_name}</td>
+                <td>{client.email}</td>
+                <td><button onClick={(e) => deleteClient(client, e)}>Delete Client</button></td>
+                <td><Link to = {{
+                  pathname: "/AdminPolicyList",
+                  client
+                }}><button>View Policies</button></Link></td>
+                <td><input type="text" onChange={(e) => updatePath(client, e)}/></td>
+                <td><input type="button" value="Update Summary" onClick={(e) => updateSummary(e)}/></td>
+            </tr>))}
+            </tbody>
           </table>
-            {result&&result.map(client => {
-              return (
-                <form>
-                <table>
-                    <tbody>
-                      <tr>
-                      <td key={client.client_id}>{client.first_name + " " +  client.last_name}</td>
-                      <td>{client.email}</td>
-                      <td><button onClick={(e) => deleteClient(client, e)}>Delete Client</button></td>
-                      <td><input type="text" onChange={(e) => updatePath(client, e)}/></td>
-                      <td><input type="button" value="Update Summary" onClick={(e) => updateSummary(e)}/></td>
-                  </tr>
-                  </tbody>
-                </table>
-                </form>
-              )
-            })}
+        </form>     
         </div>
     )
 }
