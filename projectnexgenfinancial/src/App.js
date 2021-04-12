@@ -92,6 +92,24 @@ function App() {
           <Route path="/ClientList">
             <ClientList />
           </Route>
+          <Route path="/LifeInsurance">
+            <LifeInsurance />
+          </Route>
+          <Route path="/DisabilityInsurance">
+            <DisabilityInsurance />
+          </Route>
+          <Route path="/CriticalIllnessInsurance">
+            <CriticalIllnessInsurance />
+          </Route>
+          <Route path="/LifeInsurance">
+            <LifeInsurance />
+          </Route>
+          <Route path="/LongTermCare">
+            <LongTermCare />
+          </Route>
+          <Route path="/MortgageInsurance">
+            <MortgageInsurance />
+          </Route>
         </Switch>
       </Router>
     </div>
