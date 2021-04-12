@@ -101,8 +101,8 @@ function App() {
           <Route path="/CriticalIllnessInsurance">
             <CriticalIllnessInsurance />
           </Route>
-          <Route path="/LifeInsurance">
-            <LifeInsurance />
+          <Route path="/HealthInsurance">
+            <HealthInsurance />
           </Route>
           <Route path="/LongTermCare">
             <LongTermCare />
