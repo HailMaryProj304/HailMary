@@ -11,7 +11,20 @@ function PoliciesPage() {
   }
 
   const [policies, setPolicies] = useState([]);
+  const [testUser, setTestUser] = useState([]);
+  
+  const [emailDetails, setEmailDetails] = useState({
+    email: "",
+    name: "",
+    topic: "",
+  });
 
+  function handleClick(givenEmail, givenName, givenTopic) {
+    setEmailDetails({email: givenEmail, name: givenName, topic: givenTopic})
+    console.log(emailDetails)
+    axios.post("http://localhost:8080/clients/sendEmail", emailDetails);
+    alert("Email Sent")
+  }
   const getPolicies = async () => {
     try {
           if(!localStorage.getItem('user'))
@@ -19,6 +32,7 @@ function PoliciesPage() {
                 redirect();
               }
           const user = await JSON.parse(localStorage.getItem('user'));
+          setTestUser(user);
           console.log(user.email);
           const userPolicies = await axios.get("http://localhost:8080/policies/email:" + user.email);
           setPolicies(userPolicies.data);
@@ -67,7 +81,10 @@ function PoliciesPage() {
                       end_date : item.end_date
                     }
                   }}
-                ><button type="button">Edit</button></Link></td>
+                ><button type="button">View</button></Link></td>
+                <td>
+                  <button type="button" onClick={() => handleClick(testUser.email, testUser.first_name + " " + testUser.last_name, testUser.first_name + " " + testUser.last_name + " requires assistance regarding policy " + item.policyNumber) }>Need Contact For This Policy</button>
+                </td>
               </tr>
             ))}
           </tbody>
