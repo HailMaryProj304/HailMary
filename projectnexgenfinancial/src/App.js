@@ -46,6 +46,7 @@ import LongTermCare from "./services/LongTermCare";
 import AdminPage from "./components/AdminPage";
 import RegisterAdmin from "./components/RegisterAdmin";
 import ClientList from "./components/ClientList";
+import QuotePage from "./components/QuotePage";
 
 function App() {
   return (
@@ -109,6 +110,9 @@ function App() {
           </Route>
           <Route path="/MortgageInsurance">
             <MortgageInsurance />
+          </Route>
+          <Route path="/Quote">
+            <QuotePage />
           </Route>
         </Switch>
       </Router>
