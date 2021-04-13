@@ -44,23 +44,30 @@ function AdminPolicyList () {
                 <td>{item.provider}</td>
                 <td>{item.type}</td>
                 <td>{item.coverage_amount}</td>
-                <td><Link to = 
-                    {{
-                    pathname: "/AdminPolicyPage",
-                    state: {
-                      policyNumber : item.policyNumber,
-                      first_name : item.first_name,
-                      last_name : item.last_name,
-                      provider : item.provider,
-                      type : item.type,
-                      coverage : item.coverage_amount,
-                      start_date : item.start_date,
-                      end_date : item.end_date,
-                      policy_id : item.policy_id,
-                      client : item.client
+                <td><button
+                  type="button"
+                  onClick={() => {
+                    history.push({
+                      pathname: "/AdminPolicyPage",
+                      state: {
+                        policyNumber : item.policyNumber,
+                        first_name : item.first_name,
+                        last_name : item.last_name,
+                        provider : item.provider,
+                        type : item.type,
+                        coverage : item.coverage_amount,
+                        start_date : item.start_date,
+                        end_date : item.end_date,
+                        policy_id : item.policy_id,
+                        client : item.client
                     }
+                    });
+                    localStorage.removeItem("adminUserDetails");
                   }}
-                ><button type="button">View/Edit</button></Link></td>
+                  className="tableButton"
+                >
+                  View
+                </button></td>
               </tr>
             ))}
           </tbody>

@@ -74,8 +74,10 @@ function PoliciesPage() {
                 <td className="policiesTable">{item.type}</td>
                 <td className="policiesTable">{item.coverage_amount}</td>
                 <td className="policiesTable">
-                  <Link
-                    to={{
+                <button
+                  type="button"
+                  onClick={() => {
+                    history.push({
                       pathname: "/PolicyPage",
                       state: {
                         policyNumber: item.policyNumber,
@@ -86,11 +88,13 @@ function PoliciesPage() {
                         coverage: item.coverage_amount,
                         start_date: item.start_date,
                         end_date: item.end_date,
-                      },
-                    }}
-                  >
-                    <button type="button" className="tableButton">View</button>
-                  </Link>
+                      }
+                    });
+                  }}
+                  className="tableButton"
+                >
+                  View
+                </button>
                 </td>
                 <td className="policiesTable">
                   <button
