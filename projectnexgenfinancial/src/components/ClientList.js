@@ -89,6 +89,10 @@ function ClientList() {
                   pathname: "/AdminPolicyList",
                   state: {email: client.email}
                 }}><button>View Policies</button></Link></td>
+                <td><Link to = {{
+                  pathname: "/AdminCreatePolicy",
+                  state: {client: client}
+                }}><button>Create Policy</button></Link></td>
                 <td><input 
                   type="text" 
                   onChange={(e) => updatePath(client, e)}

@@ -49,6 +49,7 @@ import ClientList from "./components/ClientList";
 import QuotePage from "./components/QuotePage";
 import AdminPolicyList from "./components/AdminPolicyList";
 import AdminPolicyPage from "./components/AdminPolicyPage";
+import AdminCreatePolicy from "./components/AdminCreatePolicy";
 
 function App() {
   return (
@@ -121,6 +122,9 @@ function App() {
           </Route>
           <Route path="/AdminPolicyPage">
             <AdminPolicyPage />
+          </Route>
+          <Route path="/AdminCreatePolicy">
+            <AdminCreatePolicy />
           </Route>
         </Switch>
       </Router>
