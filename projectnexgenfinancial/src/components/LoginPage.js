@@ -37,8 +37,8 @@ function LoginPage({ Login, error}) {
                 <br></br>
                 {(error != "") ? (<div className="error">{error}</div>) : ""}
                 <br></br>
-                <input className="button" type="submit" value="Login"></input>
-                <a><Link to="/register" className="button">Register</Link></a>
+                <input className="button" type="submit" value="Login" style={{width:"200px"}}></input>
+                <a><Link to="/register" className="button reg-button" style={{backgroundColor:"transparent", border:"2px solid #e85a4f", color:"red"}}>Register</Link></a>
 
             </div>
         </form>

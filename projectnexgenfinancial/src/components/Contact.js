@@ -23,7 +23,7 @@ function Contact() {
           <b>Fax:</b> 403-398-0224
         </p>
       </div>
-      <form className="Contact-Form" onSubmit={submitHandler}>
+      <form className="Contact-Form" onSubmit={submitHandler} style={{flexDirection:"column"}}>
         <h2 htmlFor="Contact Details" style={{ textAlign: "center" }}>
           Contact Details
         </h2>
@@ -54,64 +54,28 @@ function Contact() {
         <h2
           className="form-center"
           htmlFor="consultation"
-          style={{ marginBottom: "2rem" }}
+          style={{ marginBottom: "1rem" }}
         >
           Request a Consultation
         </h2>
-        <div className="contactForm">
+        <div className="contactForm" style={{marginBottom:"1rem", textAlign:"center"}}>
           <div className="consultation-checkboxes form-center">
-            <p>Personal Insurance</p>
-            <input
-              className="checkbox"
-              type="checkbox"
-              name="personal insurance"
-              id="personalInsurance"
-            />{" "}
+            Personal Insurance
           </div>
           <div className="consultation-checkboxes form-center">
             Business Insurance
-            <input
-              className="checkbox"
-              type="checkbox"
-              name="Business Insurance"
-              id="businessInsurance"
-            />{" "}
           </div>
           <div className="consultation-checkboxes form-center">
             Policy Review
-            <input
-              className="checkbox"
-              type="checkbox"
-              name="policy Review"
-              id="policyReview"
-            />{" "}
           </div>
           <div className="consultation-checkboxes form-center">
             Group Insurance
-            <input
-              className="checkbox"
-              type="checkbox"
-              name="Group Insurance"
-              id="Group Insurance"
-            />{" "}
           </div>
           <div className="consultation-checkboxes form-center">
             I need to make a policy change
-            <input
-              className="checkbox"
-              type="checkbox"
-              name="policy change"
-              id="policyChange"
-            />{" "}
           </div>
           <div className="consultation-checkboxes form-center">
             Other
-            <input
-              className="checkbox"
-              type="checkbox"
-              name="Other"
-              id="other"
-            />
           </div>
         </div>
         <select

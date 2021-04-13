@@ -30,14 +30,14 @@ function AdminPage() {
   }, []);
 
         return (
-           <div>
-             <Link to="/RegisterAdmin" style={{color:"black"}}>
+           <div className="adminPage" >
+             <Link to="/RegisterAdmin" className="adminLinks">
               <img src={Icon} width="50px"></img>
               <h3>Register Admin</h3>
               Register new admin users. <br />
             </Link>
 
-            <Link to="/ClientList" style={{color:"black"}}>
+            <Link to="/ClientList" className="adminLinks">
               <img src={Icon} width="50px"></img>
               <h3>List all clients</h3>
               List all clients in the database <br />

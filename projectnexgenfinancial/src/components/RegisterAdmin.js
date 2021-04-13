@@ -55,12 +55,13 @@ function RegisterAdmin() {
   return (
     <div>
       <form onSubmit={submitHandler}>
-        <div className="innerForm">
+        <div className="innerForm" style={{height:"100vh"}}>
           <h2 className="center-title">Register
           {(error != "") ? (<div className="error">{error}</div>) : ""}</h2>
-          <div className="split left">
+          <div >
             <div className="form-group">
               <label>First name</label>
+              <br />
               <input
                 type="text"
                 className="form-control"
@@ -74,6 +75,7 @@ function RegisterAdmin() {
             </div>
             <div className="form-group">
               <label>Last name</label>
+              <br />
               <input
                 type="text"
                 className="form-control"
@@ -87,6 +89,7 @@ function RegisterAdmin() {
             </div>
             <div className="form-group">
               <label>Email Address</label>
+              <br />
               <input
                 type="email"
                 className="form-control"
@@ -100,6 +103,7 @@ function RegisterAdmin() {
             </div>
             <div className="form-group">
               <label>Password</label>
+              <br />
               <input
                 type="password"
                 className="form-control"
@@ -112,11 +116,8 @@ function RegisterAdmin() {
               />
             </div>
           </div>
-          <div className="register-button">
+          <div className="register-button" style={{width:"200px"}}>
             <input type="submit" className="button" value="Register"></input>
-            <p>
-              <a href="login" style={{color:"black"}}>Already registered?</a>
-            </p>
           </div>
         </div>
       </form>
