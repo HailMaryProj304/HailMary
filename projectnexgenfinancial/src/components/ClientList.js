@@ -89,7 +89,7 @@ function ClientList() {
                 <td><button onClick={(e) => deleteClient(client, e)}>Delete Client</button></td>
                 <td><Link to = {{
                   pathname: "/AdminPolicyList",
-                  client
+                  state: {email: client.email}
                 }}><button>View Policies</button></Link></td>
                 <td><input type="text" onChange={(e) => updatePath(client, e)}/></td>
                 <td><input type="button" value="Update Summary" onClick={(e) => updateSummary(e)}/></td>

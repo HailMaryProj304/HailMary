@@ -47,6 +47,8 @@ import AdminPage from "./components/AdminPage";
 import RegisterAdmin from "./components/RegisterAdmin";
 import ClientList from "./components/ClientList";
 import QuotePage from "./components/QuotePage";
+import AdminPolicyList from "./components/AdminPolicyList";
+import AdminPolicyPage from "./components/AdminPolicyPage";
 
 function App() {
   return (
@@ -113,6 +115,12 @@ function App() {
           </Route>
           <Route path="/Quote">
             <QuotePage />
+          </Route>
+          <Route path="/AdminPolicyList">
+            <AdminPolicyList />
+          </Route>
+          <Route path="/AdminPolicyPage">
+            <AdminPolicyPage />
           </Route>
         </Switch>
       </Router>
