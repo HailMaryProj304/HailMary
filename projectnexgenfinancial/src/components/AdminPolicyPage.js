@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../CSS/style.css';
 import { useLocation, useHistory } from "react-router-dom";
 import axios from "axios";
 
 
-function AdminPolicyPage(props) {
+function AdminPolicyPage() {
   
-
+  const [userDetails, setUserDetails] = useState({
+        policy_id : '',
+        client : '',
+        policyNumber: '', 
+        first_name: '', 
+        last_name: '', 
+        provider: '', 
+        type: '', 
+        coverage_amount: '', 
+        start_date: '', 
+        end_date: ''
+  });
   let history = useHistory();
   const redirect = () => {
     console.log("Logout");
@@ -14,23 +25,31 @@ function AdminPolicyPage(props) {
     history.push('/')
   }
 
-  const [policy, setPolicy] = useState({});
+  useEffect(() => {
+    if(localStorage.getItem("adminUserDetails") !== null) {
+      setUserDetails(JSON.parse(localStorage.getItem("adminUserDetails")));
+    }
+    else {
+       localStorage.removeItem("adminUserDetails");
+       setUserDetails({
+        policy_id : history.location.state.policy_id,
+        client : history.location.state.client,
+        policyNumber: history.location.state.policyNumber, 
+        first_name: history.location.state.first_name, 
+        last_name: history.location.state.last_name, 
+        provider: history.location.state.provider, 
+        type: history.location.state.type, 
+        coverage_amount: history.location.state.coverage, 
+        start_date: history.location.state.start_date, 
+        end_date: history.location.state.end_date,
+      });
+    }
+    localStorage.setItem("adminUserDetails", JSON.stringify(userDetails));
+  }, []);
 
-  let location = useLocation();
- 
-  const [userDetails, setUserDetails] = useState({
-    policy_id : location.state.policy_id,
-    client : location.state.client,
-    policyNumber: location.state.policyNumber, 
-    first_name: location.state.first_name, 
-    last_name: location.state.last_name, 
-    provider: location.state.provider, 
-    type: location.state.type, 
-    coverage_amount: location.state.coverage, 
-    start_date: location.state.start_date, 
-    end_date: location.state.end_date,
-  });
-  console.log(userDetails);
+  useEffect(() => {
+    localStorage.setItem("adminUserDetails", JSON.stringify(userDetails));
+  }, [userDetails]);
 
   const submitHandler = async e => {
     e.preventDefault();
@@ -51,15 +70,15 @@ function AdminPolicyPage(props) {
             <label htmlFor="Policy Number">Policy Number</label>
             <input type="text" placeholder="Policy Number"    className='form-control'
             onChange={(e) =>
-              setUserDetails({ ...userDetails, policy_number: e.target.value })
+              setUserDetails({ ...userDetails, policyNumber: e.target.value })
             }
-            value={userDetails.policy_number} 
+            defaultValue={userDetails.policyNumber} 
             /> <br />
           </div>
           <div>
             <label htmlFor="First Name">First Name</label>
             <input type="text" placeholder="User First Name" className='form-control' 
-            value={userDetails.first_name}
+            defaultValue={userDetails.first_name}
             onChange={(e) =>
               setUserDetails({ ...userDetails, first_name: e.target.value })
             }/> <br />
@@ -67,7 +86,7 @@ function AdminPolicyPage(props) {
           <div>
               <label htmlFor="Last Name">Last Name</label>
               <input type="text" placeholder="User Last Name" className='form-control' 
-              value={userDetails.last_name}
+              defaultValue={userDetails.last_name}
               onChange={(e) =>
                 setUserDetails({ ...userDetails, last_name: e.target.value })
               }/> <br />
@@ -75,7 +94,7 @@ function AdminPolicyPage(props) {
           <div>
               <label htmlFor="Provider">Provider</label>
               <input type="text" placeholder="Provider" className='form-control' 
-              value={userDetails.provider}
+              defaultValue={userDetails.provider}
               onChange={(e) =>
                 setUserDetails({ ...userDetails, provider: e.target.value })
               }/> <br />
@@ -86,7 +105,7 @@ function AdminPolicyPage(props) {
               <label htmlFor="Type">Type</label>
               <br />
               <input type="text" placeholder="Type" className='form-control' 
-              value={userDetails.type}
+              defaultValue={userDetails.type}
               onChange={(e) =>
                 setUserDetails({ ...userDetails, type: e.target.value })
               }/> <br />
@@ -94,7 +113,7 @@ function AdminPolicyPage(props) {
           <div>
               <label htmlFor="Coverage">Coverage</label>
               <input type="number" placeholder="Coverage" className='form-control' 
-              value={userDetails.coverage_amount}
+              defaultValue={userDetails.coverage_amount}
               onChange={(e) =>
                 setUserDetails({ ...userDetails, coverage_amount: e.target.value })
               }/> <br />
@@ -102,7 +121,7 @@ function AdminPolicyPage(props) {
           <div>
               <label htmlFor="Start Date">Start Date</label>
               <input type="date" placeholder="Start Date" className='form-control' 
-              value={userDetails.start_date}
+              defaultValue={userDetails.start_date}
               onChange={(e) =>
                 setUserDetails({ ...userDetails, start_date: e.target.value })
               }/> <br />
@@ -110,7 +129,7 @@ function AdminPolicyPage(props) {
           <div>
               <label htmlFor="End Date">End Date</label>
               <input type="date" placeholder="End Date" className='form-control' 
-              value={userDetails.end_date}
+              defaultValue={userDetails.end_date}
               onChange={(e) =>
                 setUserDetails({ ...userDetails, end_date: e.target.value })
               } /> <br />
