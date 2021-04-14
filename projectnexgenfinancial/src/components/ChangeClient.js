@@ -1,12 +1,26 @@
 import axios from "axios";
 import React, { useState,  useEffect } from "react";
-import {useHistory} from "react-router-dom";
+import {useLocation, useHistory} from "react-router-dom";
 import "../CSS/style.css";
 import { findRenderedComponentWithType } from "react-dom/test-utils";
 
 document.body.style.overflowX = "hidden";
 
-function AccountPage() {
+function ChangeClient() {
+
+    const [userDetails, setUserDetails] = useState({
+        client_id: '',
+        email: '',
+        first_name: '',
+        last_name: '',
+        dob: '',
+        phone_number: '',
+        street_address: '',
+        prov: '',
+        country: '',
+        postal_code: '',
+        password: '',
+      });
   
   let history = useHistory();
   const redirect = () => {
@@ -29,28 +43,41 @@ function AccountPage() {
     getUser();
   }, []);
 
-  const [user, setUser] = useState("")
-  const fillUser = JSON.parse(localStorage.getItem('user'))
-  var clientId
-  const [userDetails, setUserDetails] = useState({
-    client_id: fillUser.client_id,
-    email: fillUser.email,
-    first_name: fillUser.first_name,
-    last_name: fillUser.last_name,
-    dob: fillUser.dob,
-    phone_number: fillUser.phone_number,
-    street_address: fillUser.street_address,
-    prov: fillUser.prov,
-    country: fillUser.country,
-    postal_code: fillUser.postal_code,
-    password: fillUser.password,
-  });
- 
+
+  useEffect(() => {
+    if(localStorage.getItem("clientChange") !== null) {
+      setUserDetails(JSON.parse(localStorage.getItem("clientChange")));
+    }
+    else {
+       localStorage.removeItem("clientChange");
+       setUserDetails({
+        client_id: history.location.state.client_id,
+        email: history.location.state.email,
+        first_name: history.location.state.first_name,
+        last_name: history.location.state.last_name,
+        dob: history.location.state.dob,
+        phone_number: history.location.state.phone_number,
+        street_address: history.location.state.street_address,
+        prov: history.location.state.prov,
+        country: history.location.state.country,
+        postal_code: history.location.state.postal_code,
+        password: history.location.state.password,
+      });
+    }
+    localStorage.setItem("clientChange", JSON.stringify(userDetails));
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("clientChange", JSON.stringify(userDetails));
+  }, [userDetails]);
+
+
   const submitHandler = (e) => {
     e.preventDefault();
     //make get Id by email axios here
     axios.put("http://localhost:8080/clients/update/", userDetails)
-    history.push("/MainPage")
+    localStorage.removeItem("clientChange");
+    history.push('/ClientList');
   }
 
 
@@ -295,4 +322,4 @@ function AccountPage() {
   );
 }
 
-export default AccountPage;
+export default ChangeClient;

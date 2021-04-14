@@ -44,17 +44,17 @@ function MainPage() {
           <div className="grid-items">
             <Link to="/PoliciesPage" style={{color:"black"}}>
               <img src={Icon} width="50px"></img>
-              <h3>View policies</h3>
-              View policies that you have chosen. <br />
+              <h3>View Policies</h3>
+              View policies that you have chosen <br />
             </Link>
           </div>
           <div className="grid-items">
           
          {(<a href = {summary}> <img src={Icon} width="50px"></img></a>)}
          <h3 style={{ fontSize: "1.15rem" }}>
-           Summary download
+           Summary Download
          </h3>
-         If summary is available click here to download
+         Download your summaries that you have available
           </div>
           <div className="grid-items">
             <Link to="/contact" style={{color:"black"}}>
@@ -62,14 +62,14 @@ function MainPage() {
               <h3 style={{ fontSize: "1.15rem" }}>
                 Request Contact/Assistance
               </h3>
-              Having problems? NexGen is here for you.
+              Having problems? NexGen is here for you
             </Link>
           </div>
           <div className="grid-items">
             <Link to="/purchase" style={{color:"black"}}>
               <img src={Icon} width="50px"></img>
               <h3>Buy Insurance</h3>
-              Buy Insurance here. Give me that p-p-paper
+              Buy Insurance Here
             </Link>
           </div>
           <div className="grid-items">
@@ -83,7 +83,7 @@ function MainPage() {
             <Link to="/account" style={{color:"black"}}>
               <img src={Icon} width="50px"></img>
               <h3>Change Account Details</h3>
-              Change your password, or personal information.
+              Change your password, or personal information
             </Link>
           </div>
         </div>
