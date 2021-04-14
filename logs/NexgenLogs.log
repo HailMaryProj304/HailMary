@@ -1,0 +1,17 @@
+2021-04-14 11:46:52,481 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 11.0.10 on DESKTOP-EUP6709 with PID 9416 (D:\CAPSTONE PROJECT\HailMary\HailMaryAPI\HailMaryAPI\target\classes started by rayfi in D:\CAPSTONE PROJECT\HailMary)
+2021-04-14 11:46:52,487 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-14 11:46:59,064 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 7.322 seconds (JVM running for 7.972)
+2021-04-14 11:47:14,092 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Retrieved all clients
+2021-04-14 11:48:49,772 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Retrieved all clients
+2021-04-14 11:49:02,314 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
+2021-04-14 11:50:17,610 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Retrieved all clients
+2021-04-14 11:51:31,037 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
+2021-04-14 11:51:43,539 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Retrieved all clients
+2021-04-14 11:51:45,199 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Retrieved all clients
+2021-04-14 12:09:13,593 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
+2021-04-14 12:17:20,142 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
+2021-04-14 12:24:38,099 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Retrieved all clients
+2021-04-14 12:26:13,124 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
+2021-04-14 12:28:45,306 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
+2021-04-14 12:30:37,610 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
+2021-04-14 12:30:47,395 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Retrieved all clients

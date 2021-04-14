@@ -24,11 +24,11 @@ const LinkItem = styled.li`
   align-items: center;
   justify-content: center;
   display: flex;
-  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: all 220ms ease-in-out;
 
   &:hover {
-    border-top: 2px solid #e85a4f;
+    border-bottom: 2px solid #e85a4f;
   }
 `;
 

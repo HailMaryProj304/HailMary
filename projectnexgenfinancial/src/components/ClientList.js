@@ -144,7 +144,7 @@ function ClientList() {
           </table>
         </form> 
         
-        <a><Link to="/register" className="button reg-button" style={{backgroundColor:"transparent", border:"2px solid #e85a4f", color:"red"}}>Create a new Client</Link></a>    
+        <a><Link to="/register" className="button reg-button" style={{backgroundColor:"transparent", border:"2px solid #e85a4f", color:"red", marginTop:"1rem"}}>Create a new Client</Link></a>    
         </div>
     )
 }
