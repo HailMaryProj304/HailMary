@@ -76,6 +76,8 @@ function ChangeClient() {
     e.preventDefault();
     //make get Id by email axios here
     axios.put("http://localhost:8080/clients/update/", userDetails)
+    localStorage.removeItem("clientChange");
+    history.push('/ClientList');
   }
 
 
