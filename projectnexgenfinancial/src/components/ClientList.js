@@ -69,9 +69,9 @@ function ClientList() {
 
     return (
   <div>
-        <form>
+        <form style={{marginTop:"50px"}}>
           <table>
-              <tbody>
+            <thead>
                 <tr>
                   <th>Client Name</th>
                   <th>Client Email</th>
@@ -80,22 +80,24 @@ function ClientList() {
                   <th>Insert Summary</th>
                   <th>Submit</th>
                 </tr>
+               </thead> 
+              <tbody>
               {result.map(client => (
                 <tr>
-                <td key={client.client_id}>{client.first_name + " " +  client.last_name}</td>
-                <td>{client.email}</td>
-                <td><button onClick={(e) => deleteClient(client, e)}>Delete Client</button></td>
-                <td><Link to = {{
+                <td key={client.client_id} className="clientTable">{client.first_name + " " +  client.last_name}</td>
+                <td className="clientTable">{client.email}</td>
+                <td className="clientTable"><button onClick={(e) => deleteClient(client, e)}>Delete Client</button></td>
+                <td className="clientTable"><Link to = {{
                   pathname: "/AdminPolicyList",
                   state: {email: client.email}
                 }}><button>View Policies</button></Link></td>
-                <td><input 
+                <td className="clientTable"><input 
                   type="text" 
                   onChange={(e) => updatePath(client, e)}
                   style={{ width: "200px" }}
                   />
                   </td>
-                <td><input 
+                <td className="clientTable"><input 
                 type="button" 
                 value="Update Summary" 
                 onClick={(e) => updateSummary(e)}
