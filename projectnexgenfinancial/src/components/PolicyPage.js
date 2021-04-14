@@ -1,33 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../CSS/style.css';
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 
 
 function PolicyPage(props) {
   
   const [policy, setPolicy] = useState({});
+  const [userDetails, setUserDetails] = useState({});
 
-  let location = useLocation();
-  console.log(location);
-  const [userDetails, setUserDetails] = useState({
-    policynum: location.state.policyNumber, 
-    first_name: location.state.first_name, 
-    last_name: location.state.last_name, 
-    provider: location.state.provider, 
-    type: location.state.type, 
-    coverage: location.state.coverage, 
-    start_date: location.state.start_date, 
-    end_date: location.state.end_date,
-  });
-
+  let history = useHistory();
+  const redirect = () => {
+    console.log("Logout");
+    localStorage.clear();
+    history.push("/");
+  }
+  //const location = useLocation();
+  useEffect(() => {
+    if(localStorage.getItem("userDetails") !== null) {
+      setUserDetails(localStorage.getItem("userDetails"));
+    }
+    else {
+       setUserDetails({
+        policyNumber: history.location.state.policyNumber, 
+        first_name: history.location.state.first_name, 
+        last_name: history.location.state.last_name, 
+        provider: history.location.state.provider, 
+        type: history.location.state.type, 
+        coverage: history.location.state.coverage, 
+        start_date: history.location.state.start_date, 
+        end_date: history.location.state.end_date,
+      });
+    }
+    localStorage.setItem("userDetails", userDetails);
+  }, []);
+  
+  
+  //history.push("/PolicyPage", userDetails);
 
   const submitHandler = async e => {
     e.preventDefault();
     //todo add policy update request
   }
 
-  
-  
   
   return (
     <div className="container">
@@ -36,9 +50,9 @@ function PolicyPage(props) {
           <label htmlFor="Policy Number">Policy Number</label>
           <input type="text" placeholder="Policy Number"    className='form-control'
           onChange={(e) =>
-            setUserDetails({ ...userDetails, policynum: e.target.value })
+            setUserDetails({ ...userDetails, policyNumber: e.target.value })
           }
-          value={userDetails.policynum} 
+          value={userDetails.policyNumber} 
           disabled /> <br />
         </div>
         <div>

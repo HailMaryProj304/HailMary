@@ -4,10 +4,9 @@ import { useLocation, useHistory } from "react-router-dom";
 import axios from "axios";
 
 
-function AdminPolicyPage() {
+function AdminCreatePolicy() {
   
-  const [userDetails, setUserDetails] = useState({
-        policy_id : '',
+  const [createPolicyDetails, setcreatePolicyDetails] = useState({
         client : '',
         policyNumber: '', 
         first_name: '', 
@@ -26,37 +25,27 @@ function AdminPolicyPage() {
   }
 
   useEffect(() => {
-    if(localStorage.getItem("adminUserDetails") !== null) {
-      setUserDetails(JSON.parse(localStorage.getItem("adminUserDetails")));
+    if(localStorage.getItem("createPolicyDetails") !== null) {
+      setcreatePolicyDetails(JSON.parse(localStorage.getItem("createPolicyDetails")));
     }
     else {
-       localStorage.removeItem("adminUserDetails");
-       setUserDetails({
-        policy_id : history.location.state.policy_id,
+       localStorage.removeItem("policyDetails");
+       setcreatePolicyDetails({
         client : history.location.state.client,
-        policyNumber: history.location.state.policyNumber, 
-        first_name: history.location.state.first_name, 
-        last_name: history.location.state.last_name, 
-        provider: history.location.state.provider, 
-        type: history.location.state.type, 
-        coverage_amount: history.location.state.coverage, 
-        start_date: history.location.state.start_date, 
-        end_date: history.location.state.end_date,
       });
     }
-    localStorage.setItem("adminUserDetails", JSON.stringify(userDetails));
+    localStorage.setItem("createPolicyDetails", JSON.stringify(createPolicyDetails));
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("adminUserDetails", JSON.stringify(userDetails));
-  }, [userDetails]);
+    localStorage.setItem("createPolicyDetails", JSON.stringify(createPolicyDetails));
+  }, [createPolicyDetails]);
 
   const submitHandler = async e => {
     e.preventDefault();
-    //todo add policy update request
-    console.log("After update");
-    console.log(userDetails);
-    axios.put("http://localhost:8080/policies/update/", userDetails)
+    console.log("After add");
+    console.log(createPolicyDetails);
+    axios.put("http://localhost:8080/policies/add/", createPolicyDetails)
   }
 
   
@@ -70,33 +59,33 @@ function AdminPolicyPage() {
             <label htmlFor="Policy Number">Policy Number</label>
             <input type="text" placeholder="Policy Number"    className='form-control'
             onChange={(e) =>
-              setUserDetails({ ...userDetails, policyNumber: e.target.value })
+              setcreatePolicyDetails({ ...createPolicyDetails, policyNumber: e.target.value })
             }
-            defaultValue={userDetails.policyNumber} 
+            defaultValue={createPolicyDetails.policyNumber} 
             /> <br />
           </div>
           <div>
             <label htmlFor="First Name">First Name</label>
             <input type="text" placeholder="User First Name" className='form-control' 
-            defaultValue={userDetails.first_name}
+            defaultValue={createPolicyDetails.first_name}
             onChange={(e) =>
-              setUserDetails({ ...userDetails, first_name: e.target.value })
+              setcreatePolicyDetails({ ...createPolicyDetails, first_name: e.target.value })
             }/> <br />
           </div>
           <div>
               <label htmlFor="Last Name">Last Name</label>
               <input type="text" placeholder="User Last Name" className='form-control' 
-              defaultValue={userDetails.last_name}
+              defaultValue={createPolicyDetails.last_name}
               onChange={(e) =>
-                setUserDetails({ ...userDetails, last_name: e.target.value })
+                setcreatePolicyDetails({ ...createPolicyDetails, last_name: e.target.value })
               }/> <br />
           </div>
           <div>
               <label htmlFor="Provider">Provider</label>
               <input type="text" placeholder="Provider" className='form-control' 
-              defaultValue={userDetails.provider}
+              defaultValue={createPolicyDetails.provider}
               onChange={(e) =>
-                setUserDetails({ ...userDetails, provider: e.target.value })
+                setcreatePolicyDetails({ ...createPolicyDetails, provider: e.target.value })
               }/> <br />
           </div>
         </div>
@@ -105,37 +94,37 @@ function AdminPolicyPage() {
               <label htmlFor="Type">Type</label>
               <br />
               <input type="text" placeholder="Type" className='form-control' 
-              defaultValue={userDetails.type}
+              defaultValue={createPolicyDetails.type}
               onChange={(e) =>
-                setUserDetails({ ...userDetails, type: e.target.value })
+                setcreatePolicyDetails({ ...createPolicyDetails, type: e.target.value })
               }/> <br />
           </div>
           <div>
               <label htmlFor="Coverage">Coverage</label>
               <input type="number" placeholder="Coverage" className='form-control' 
-              defaultValue={userDetails.coverage_amount}
+              defaultValue={createPolicyDetails.coverage_amount}
               onChange={(e) =>
-                setUserDetails({ ...userDetails, coverage_amount: e.target.value })
+                setcreatePolicyDetails({ ...createPolicyDetails, coverage_amount: e.target.value })
               }/> <br />
           </div>
           <div>
               <label htmlFor="Start Date">Start Date</label>
               <input type="date" placeholder="Start Date" className='form-control' 
-              defaultValue={userDetails.start_date}
+              defaultValue={createPolicyDetails.start_date}
               onChange={(e) =>
-                setUserDetails({ ...userDetails, start_date: e.target.value })
+                setcreatePolicyDetails({ ...createPolicyDetails, start_date: e.target.value })
               }/> <br />
           </div>
           <div>
               <label htmlFor="End Date">End Date</label>
               <input type="date" placeholder="End Date" className='form-control' 
-              defaultValue={userDetails.end_date}
+              defaultValue={createPolicyDetails.end_date}
               onChange={(e) =>
-                setUserDetails({ ...userDetails, end_date: e.target.value })
+                setcreatePolicyDetails({ ...createPolicyDetails, end_date: e.target.value })
               } /> <br />
           </div>
           <div className="register-button">
-            <input type="submit" className="button" value="Change"></input>
+            <input type="submit" className="button" value="Create"></input>
           </div>
         </div>
       </form>
@@ -143,4 +132,4 @@ function AdminPolicyPage() {
   )
 }
 
-export default AdminPolicyPage;
+export default AdminCreatePolicy;

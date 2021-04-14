@@ -144,11 +144,19 @@
     align-content: center;
   }
 }
-.tableButton {
+.tableButton1 {
+  padding: 12px 15px;
+  background-color: #eee;
+  color: black;
+  border-style: none;
+  cursor: pointer;
+}
+.tableButton2 {
   padding: 12px 15px;
   background-color: #e85a4f;
   color: white;
   border-style: none;
+  cursor: pointer;
 }
 .form-center {
   margin: 0 auto;
@@ -481,9 +489,11 @@ p {
   margin: 0;
 }
 html {
-  background: url(/src/CSS/shapes.png) no-repeat center center fixed;
-  min-height: 100%;
-  position: relative;
+  background: url(/src/CSS/shapes.svg) no-repeat center center fixed;
+  width: 100%;
+  background-size: cover;
+  height: 0;
+  padding: 0;
 }
 input {
   background-color: #eee;
@@ -493,7 +503,7 @@ input {
   width: 80%;
 }
 td {
-  padding: 20px;
+  padding: 5px;
 }
 @media 
 only screen and (max-width: 760px),
