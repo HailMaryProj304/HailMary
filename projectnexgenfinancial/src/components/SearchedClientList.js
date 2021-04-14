@@ -5,7 +5,7 @@ import axios from "axios";
 
 var test = "NOT WORKING";
 
-function ClientList() {
+function SearchedClientList() {
   let history = useHistory();
   const redirect = () => {
     console.log("Logout");
@@ -53,12 +53,16 @@ function ClientList() {
     axios.post("http://localhost:8080/summary/RegisterSummary/", URL);
   }
 
-  const getUsers = async () => {
-    const response = await Axios("http://localhost:8080/clients/allClients");
+  const getUserByEmail = async (email) => {
+    const response = await Axios("http://localhost:8080/clients/clientemail/" + email);
     setResult(response.data);
     //console.log(list)
   };
 
+  const getUsersByLastName = async (lastname) => {
+    const response = await Axios("http://localhost:8080/clients/clientsbylastname/" + lastname);
+    setResult(response.data);
+    
   useEffect(() => {
     console.log(result);
   }, [result]);
@@ -114,4 +118,4 @@ function ClientList() {
         </div>
     )
 }
-export default ClientList;
+export default SearchedClientList;
