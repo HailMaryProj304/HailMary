@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
 import Axios from "axios";
 import axios from "axios";
+import Register from './Register';
 
 var test = "NOT WORKING";
 
@@ -48,6 +49,9 @@ function ClientList() {
     });
   }
 
+  function changeClient(client, e) {
+    e.preventDefault();
+  }
   function updateSummary() {
     console.log("added summary?");
     axios.post("http://localhost:8080/summary/RegisterSummary/", URL);
@@ -76,6 +80,7 @@ function ClientList() {
                   <th>Client Name</th>
                   <th>Client Email</th>
                   <th>Delete Client</th>
+                  <th>Change Client Details</th>
                   <th>View Policies</th>
                   <th>Insert Summary</th>
                   <th>Submit</th>
@@ -85,6 +90,31 @@ function ClientList() {
                 <td key={client.client_id}>{client.first_name + " " +  client.last_name}</td>
                 <td>{client.email}</td>
                 <td><button onClick={(e) => deleteClient(client, e)}>Delete Client</button></td>
+                <td><button
+                  type="button"
+                  onClick={() => {
+                    history.push({
+                      pathname: "/ChangeClient",
+                      state: {
+                      client_id: client.client_id,
+                      email: client.email,
+                      first_name: client.first_name,
+                      last_name: client.last_name,
+                      dob: client.dob,
+                      phone_number: client.phone_number,
+                      street_address: client.street_address,
+                      prov: client.prov,
+                      country: client.country,
+                      postal_code: client.postal_code,
+                      password: client.password
+                    }
+                    });
+                    localStorage.removeItem("clientChange");
+                  }}
+                  className="tableButton"
+                >
+                 Change Client
+                </button></td>
                 <td><Link to = {{
                   pathname: "/AdminPolicyList",
                   state: {email: client.email}
@@ -105,7 +135,9 @@ function ClientList() {
             </tr>))}
             </tbody>
           </table>
-        </form>     
+        </form> 
+        
+        <a><Link to="/register" className="button reg-button" style={{backgroundColor:"transparent", border:"2px solid #e85a4f", color:"red"}}>Create a new Client</Link></a>    
         </div>
     )
 }

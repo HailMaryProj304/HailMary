@@ -49,6 +49,7 @@ import ClientList from "./components/ClientList";
 import QuotePage from "./components/QuotePage";
 import AdminPolicyList from "./components/AdminPolicyList";
 import AdminPolicyPage from "./components/AdminPolicyPage";
+import ChangeClient from "./components/ChangeClient";
 
 function App() {
   return (
@@ -121,6 +122,9 @@ function App() {
           </Route>
           <Route path="/AdminPolicyPage">
             <AdminPolicyPage />
+          </Route>
+          <Route path="/ChangeClient">
+            <ChangeClient />
           </Route>
         </Switch>
       </Router>
