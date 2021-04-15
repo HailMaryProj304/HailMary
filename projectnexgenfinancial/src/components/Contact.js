@@ -18,7 +18,7 @@ function Contact() {
   return (
     <div className="container" style={{ marginTop: "5vh" }}>
       <div className="Contact-Header">
-        <p>
+        <p style={{textAlign:"center"}}>
           <b>Phone:</b> 403-264-6690 | <b>Toll Free:</b> 1-866-767-6690 |{" "}
           <b>Fax:</b> 403-398-0224
         </p>

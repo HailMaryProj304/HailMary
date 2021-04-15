@@ -26,6 +26,7 @@ const LinkItem = styled.li`
   display: flex;
   border-bottom: 2px solid transparent;
   transition: all 220ms ease-in-out;
+  margin: 0;
 
   &:hover {
     border-bottom: 2px solid #e85a4f;
