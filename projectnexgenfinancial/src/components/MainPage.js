@@ -27,12 +27,21 @@ function MainPage() {
   }, []);
 
   const [summary, setSummary] = useState(""); 
+  const [error, setError] = useState("");
   const fillUser = JSON.parse(localStorage.getItem('user'))
   var URL = "";
   axios.get("http://localhost:8080/summary/id/" + fillUser.client_id)
   .then((response) => {
       var URL = response.data;
-     setSummary(URL.path);
+      if(!(URL === "")) {
+        setSummary(URL.path);
+        setError("")
+      }
+
+      else {
+        setSummary("")
+        setError("No summaries for this client available")
+      }
     console.log("THE URL : " + URL.path);    
   })
   
@@ -54,7 +63,7 @@ function MainPage() {
          <h3 style={{ fontSize: "1.15rem" }}>
            Summary Download
          </h3>
-         Download your summaries that you have available
+         {(error != "") ? (<div>{error}</div>) : "Download your summaries that you have available"}
           </div>
           <div className="grid-items">
             <Link to="/contact" style={{color:"black"}}>
