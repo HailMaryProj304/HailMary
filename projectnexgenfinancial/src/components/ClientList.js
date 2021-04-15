@@ -129,7 +129,7 @@ function ClientList() {
                 <td className="clientTable"><input 
                   type="text" 
                   onChange={(e) => updatePath(client, e)}
-                  style={{ width: "200px" }}
+                  style={{ width: "auto" }}
                   />
                   </td>
                 <td className="clientTable"><input 

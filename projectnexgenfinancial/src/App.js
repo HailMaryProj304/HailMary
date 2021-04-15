@@ -42,6 +42,9 @@ import DisabilityInsurance from "./services/DisabilityInsurance";
 import CriticalIllnessInsurance from "./services/CriticalIllnessInsurance";
 import HealthInsurance from "./services/HealthInsurance";
 import LongTermCare from "./services/LongTermCare";
+import BuySellInsurance from "./services/BuySellInsurance";
+import KeyManInsurance from "./services/KeyManInsurance";
+import ExecutiveInsurance from "./services/ExecutiveInsurance"
 
 import AdminPage from "./components/AdminPage";
 import RegisterAdmin from "./components/RegisterAdmin";
@@ -127,12 +130,21 @@ function App() {
           </Route>
           <Route path="/ChangeClient">
             <ChangeClient />
-            </Route>
+          </Route>
           <Route path="/AdminCreatePolicy">
             <AdminCreatePolicy />
           </Route>
           <Route path="/SearchedClientList">
             <SearchedClientList />
+          </Route>
+          <Route path="/BuySellInsurance">
+            <BuySellInsurance />
+          </Route>
+          <Route path="/KeyManInsurance">
+            <KeyManInsurance />
+          </Route>
+          <Route path="/ExecutiveInsurance">
+            <ExecutiveInsurance />
           </Route>
         </Switch>
       </Router>

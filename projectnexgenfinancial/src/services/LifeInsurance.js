@@ -12,7 +12,7 @@ function LifeInsurance() {
         The whole basis of life insurance is establishing how much is required and for how long.
       </p>
       <br></br>
-      <b>Example:</b>
+      <p><strong>Example:</strong></p>
       <p>
         <ul>
           <li>A young family with two children ages 2 & 4 years</li>
@@ -23,7 +23,7 @@ function LifeInsurance() {
       In this example, we would recommend insurance adequate to eliminate the debt, and replace the household income for a period of 10-20 years. In addition, it would prudent to have sufficient coverage on the care-giver as well.
       </p>
       <br></br>
-      <b>Why would you need to have insurance on a caregiver?</b>
+      <p><strong>Why would you need to have insurance on a caregiver?</strong></p>
       <p>
         <ul>
           <li>To provide funding for a child care provider in the event of the death of the major care giver</li>
@@ -32,12 +32,13 @@ function LifeInsurance() {
         </ul>
       </p>
       <br></br>
-      <b>So, how long do I need life insurance for?</b>
+      <p><strong>So, how long do I need life insurance for?</strong></p>
+      <br></br>
       <p>
         You would need insurance for as long as there is financial dependency. Financial dependency is defined as, "an individual or family that is reliant on you for income and would suffer a financial loss in the event of your death." For example, the financial dependency period for a child is roughly 20 years from birth. Financial dependency if you have a 30 year mortgage would be 30 years.
       </p>
       <br></br>
-      <a><Link to="/services" className="button w-inline-block">Back</Link></a>
+      <a><Link to="/services" className="button w-inline-block" style={{marginBottom:"3rem"}}>Back</Link></a>
     </div>
   );
 }

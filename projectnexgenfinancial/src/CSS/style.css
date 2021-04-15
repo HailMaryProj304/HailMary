@@ -23,6 +23,8 @@
 }
 .adminPage {
   margin-top: 15vh;
+  margin-bottom: 15vh;
+  height: 100vh;
 }
 .adminLinks {
   margin-top: 15vh;
@@ -40,8 +42,9 @@
   margin-left: 30%;
   margin-right: 30%;
   margin-top: 10%;
+  margin-bottom: 10%;
   min-height: 100%;
-  height: 75vh;
+  height: 100vh;
 }
 @media only screen and (max-width: 768px) {
   .BodyText {
@@ -193,6 +196,8 @@
   grid-template-areas: "Area-2 . Area";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
 .grid-items {
   color: #000;
@@ -223,6 +228,11 @@
 .center-title,
 form {
   text-align: center;
+}
+.headline {  
+  font-family: Helvetica;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 .HeroButton {
   left: 50%;
@@ -368,6 +378,20 @@ body {
     top: 60%;
   }
 }
+.searchForm {
+  padding: 15px;
+}
+.searchFunction {
+  margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .searchFunction {
+    margin: 5px;
+  }
+  .searchTitle {
+    display: none;
+  }
+}
 .select-item {
   background-color: #eee;
   border: 0;
@@ -486,6 +510,21 @@ h1,
 p {
   margin: 0;
 }
+p {
+  text-align: left;
+  font-size: large;
+}
+strong {
+  font-size: large;
+}
+b {
+  font-size: large;
+  text-align: left;
+}
+li {
+  margin: 10px;
+  text-align: left;
+}
 html {
   background: url(/src/CSS/shapes.svg) no-repeat center center fixed;
   width: 100%;
@@ -501,6 +540,9 @@ input {
   width: 80%;
 }
 td {
+  padding: 15px;
+}
+th {
   padding: 15px;
 }
 @media 
@@ -544,6 +586,14 @@ only screen and (max-width: 760px),
 	td.clientTable:nth-of-type(6):before { content: "Create Policy"; }
 	td.clientTable:nth-of-type(7):before { content: "Insert Summary"; }
 	td.clientTable:nth-of-type(8):before { content: "Submit"; }
+
+  td.searchTable:nth-of-type(1):before { content: "Client Name"; }
+	td.searchTable:nth-of-type(2):before { content: "Client Email"; }
+	td.searchTable:nth-of-type(3):before { content: "Delete Client"; }
+	td.searchTable:nth-of-type(4):before { content: "View Policies"; }
+	td.searchTable:nth-of-type(5):before { content: "Create Policy"; }
+	td.searchTable:nth-of-type(6):before { content: "Insert Summary"; }
+	td.searchTable:nth-of-type(7):before { content: "Submit"; }
 
   td.policiesTable:nth-of-type(1):before { content: "Policy Number"; }
 	td.policiesTable:nth-of-type(2):before { content: "Provider"; }
