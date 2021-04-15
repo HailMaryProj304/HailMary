@@ -60,9 +60,6 @@ export function MobileNavLinks(props) {
             <Link href="about">About us</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">How it works</Link>
-          </LinkItem>
-          <LinkItem>
             <Link href="services">Services</Link>
           </LinkItem>
           <LinkItem>

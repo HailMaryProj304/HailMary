@@ -1,773 +1,207 @@
-2021-04-12 08:37:04,856 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 11.0.10 on DESKTOP-EUP6709 with PID 10188 (D:\CAPSTONE PROJECT\HailMary\HailMaryAPI\HailMaryAPI\target\classes started by rayfi in D:\CAPSTONE PROJECT\HailMary)
-2021-04-12 08:37:04,864 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2021-04-12 08:37:12,023 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 7.958 seconds (JVM running for 8.607)
-2021-04-12 08:38:29,204 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin: test@email.com does not exsist
-2021-04-12 08:38:29,213 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Client with email: test@email.com was retrieved
-2021-04-12 08:38:29,267 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Admin: test@email.com does not exsist
-2021-04-12 08:38:29,304 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client with email: test@email.com was retrieved
-2021-04-12 08:38:29,620 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:29,637 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:32,749 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:32,761 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:32,781 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:32,798 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:32,815 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:32,819 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:33,005 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:33,016 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:33,036 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:33,049 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:33,065 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:33,084 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:33,085 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:33,094 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:38,782 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin: test@email.com does not exsist
-2021-04-12 08:38:38,786 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Client with email: test@email.com was retrieved
-2021-04-12 08:38:38,896 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,649 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,657 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,680 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,692 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,709 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,720 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,733 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,746 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,849 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,860 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,886 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,899 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,912 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,923 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,948 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:38:43,957 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:39:10,650 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies for test@email.com were retrieved successfully
-2021-04-12 08:39:13,837 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:39:13,848 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:39:13,856 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:39:13,869 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:39:13,879 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:39:13,886 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:39:13,897 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:39:13,905 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:41:34,106 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Client with email: test@email.com was retrieved
-2021-04-12 08:41:34,230 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client with email: test@email.com already exsists
-2021-04-12 08:41:34,279 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client: test@email.com was successfully added
-2021-04-12 08:41:37,100 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Admin: test@email.com does not exsist
-2021-04-12 08:41:40,032 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Admin: test@email.com does not exsist
-2021-04-12 08:41:44,659 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Admin: test@email.com does not exsist
-2021-04-12 08:42:03,039 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Admin: test@email.com does not exsist
-2021-04-12 08:42:03,042 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Client with email: test@email.com was retrieved
-2021-04-12 08:42:03,164 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,275 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,284 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,325 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,338 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,351 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,364 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,408 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,418 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,560 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,570 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,594 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,608 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,619 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,632 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,646 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:43:07,669 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:46:33,944 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:46:33,954 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:46:33,967 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:46:33,976 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:46:33,986 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:46:33,998 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:46:34,009 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:46:34,016 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:35,739 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:35,748 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:35,784 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:35,793 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:35,802 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:35,812 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:35,846 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:35,854 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:36,094 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:36,104 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:36,309 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:36,318 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:36,327 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:36,337 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:36,345 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:48:36,353 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:37,397 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:37,407 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:37,441 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:37,449 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:37,461 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:37,471 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:37,480 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:37,488 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:38,099 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:38,106 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:38,114 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:38,121 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:38,129 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:38,135 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:38,143 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:49:38,149 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:09,417 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:09,427 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:09,437 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:09,445 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:09,451 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:09,460 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:09,467 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:09,474 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:13,669 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:13,678 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:13,685 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:13,695 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:13,703 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:13,712 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:13,721 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:13,731 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,529 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,540 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,574 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,581 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,590 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,600 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,653 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,664 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,791 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,800 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,819 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,830 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,842 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,852 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,884 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:16,892 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:19,781 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:19,787 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:19,799 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:19,807 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:19,815 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:19,821 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:19,830 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:19,837 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:25,223 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies for test@email.com were retrieved successfully
-2021-04-12 08:50:33,352 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:33,362 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:33,370 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:33,378 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:33,384 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:33,391 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:33,399 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:33,404 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:35,513 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:35,520 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:35,529 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:35,537 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:35,544 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:35,550 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:35,556 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:35,564 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:38,983 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:38,990 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:38,998 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:39,004 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:39,012 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:39,018 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:39,026 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:50:39,033 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:49,780 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:49,790 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:49,822 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:49,833 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:49,841 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:49,848 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:49,857 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:49,866 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:50,009 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:50,015 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:50,037 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:50,046 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:50,055 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:50,065 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:50,108 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:55:50,115 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,228 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,238 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,281 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,290 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,300 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,311 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,364 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,383 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,533 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,542 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,562 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,575 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,607 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,621 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,639 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:56:30,651 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:02,791 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies for test@email.com were retrieved successfully
-2021-04-12 08:59:36,420 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:36,430 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:36,440 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:36,449 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:36,458 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:36,464 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:36,472 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:36,480 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:44,647 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:44,654 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:44,661 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:44,668 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:44,678 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:44,683 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:44,691 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 08:59:44,696 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 09:00:14,365 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 09:00:14,374 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 09:00:14,383 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 09:00:14,393 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 09:00:14,399 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 09:00:14,409 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 09:00:14,417 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 09:00:14,426 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 09:01:03,439 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 09:01:03,448 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 09:01:03,457 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 09:01:03,466 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 09:01:03,476 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 09:01:03,483 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 09:01:03,491 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 09:01:03,497 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 09:03:15,190 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 09:03:15,197 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,507 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,530 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,547 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,656 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,668 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,696 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,707 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,718 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,731 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,765 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:21:47,774 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:02,622 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:02,632 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:02,673 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:02,682 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:02,690 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:02,701 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:02,736 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:02,744 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:03,303 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:03,310 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:03,318 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:03,325 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:03,334 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:03,342 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:03,349 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:03,355 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:10,324 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:10,334 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:10,341 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:10,348 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:10,354 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:10,361 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:10,367 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:10,373 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:20,600 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:20,605 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:20,611 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:20,617 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:20,625 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:20,634 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:20,643 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:20,650 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:27,708 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:27,715 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:27,723 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:27,732 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:27,738 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:27,744 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:27,750 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:22:27,755 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,678 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,686 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,713 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,721 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,730 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,739 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,770 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,779 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,887 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,895 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,910 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,916 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,923 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,932 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,944 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:24:15,953 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:37,784 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:37,792 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:37,801 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:37,809 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:37,816 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:37,822 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:37,830 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:37,836 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:39,723 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:39,732 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:39,741 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:39,750 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:39,757 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:39,766 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:39,773 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:39,780 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:44,813 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:44,819 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:44,831 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:44,838 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:44,845 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:44,850 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:44,856 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:27:44,865 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:28:11,207 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:28:11,214 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:28:11,220 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:28:11,229 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:28:11,236 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:28:11,243 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:28:11,249 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:28:11,255 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:00,595 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:00,604 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:00,611 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:00,618 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:00,625 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:00,633 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:00,640 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:00,646 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:39,701 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:39,708 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:39,715 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:39,721 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:39,730 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:39,736 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:39,743 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:39,749 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,295 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,302 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,337 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,345 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,353 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,364 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,402 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,411 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,542 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,549 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,570 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,578 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,585 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,595 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,606 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:31:50,617 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 10:52:14,162 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 10:52:14,191 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 10:52:14,199 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 10:52:14,211 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 10:52:14,221 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 10:52:14,230 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 10:59:53,889 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies for test@email.com were retrieved successfully
-2021-04-12 11:03:40,159 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies for test@email.com were retrieved successfully
-2021-04-12 11:05:08,973 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies for test@email.com were retrieved successfully
-2021-04-12 11:05:09,110 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies for test@email.com were retrieved successfully
-2021-04-12 11:06:07,326 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies for test@email.com were retrieved successfully
-2021-04-12 11:06:15,683 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies for test@email.com were retrieved successfully
-2021-04-12 11:06:45,162 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies for test@email.com were retrieved successfully
-2021-04-12 11:07:37,281 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies for test@email.com were retrieved successfully
-2021-04-12 11:08:14,575 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 11:08:14,584 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 11:08:14,590 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 11:08:14,597 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 11:08:14,604 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 11:08:14,610 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 11:08:14,615 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 11:08:14,621 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:35,984 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies for test@email.com were retrieved successfully
-2021-04-12 11:10:37,473 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:37,481 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:37,487 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:37,493 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:37,502 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:37,507 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:37,513 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:37,518 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:43,885 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:43,891 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:43,923 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:43,932 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:43,944 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:43,953 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:43,960 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:43,970 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:44,425 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:44,433 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:44,556 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:44,562 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:44,571 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:44,577 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:44,584 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 11:10:44,589 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,107 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,115 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,174 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,181 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,191 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,200 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,272 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,284 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,500 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,508 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,549 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,556 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,570 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,578 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,586 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:55,593 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:57,189 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies for test@email.com were retrieved successfully
-2021-04-12 11:24:58,517 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:58,522 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:58,533 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:58,540 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:58,547 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:58,553 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:58,559 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 11:24:58,566 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:14:59,722 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies for test@email.com were retrieved successfully
-2021-04-12 12:15:04,788 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies for test@email.com were retrieved successfully
-2021-04-12 12:15:12,669 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies for test@email.com were retrieved successfully
-2021-04-12 12:15:58,672 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:58,682 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:58,743 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:58,751 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:58,792 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:58,800 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:58,854 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:58,864 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:59,280 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:59,288 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:59,337 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:59,346 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:59,354 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:59,362 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:59,376 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:15:59,382 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:00,463 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies for test@email.com were retrieved successfully
-2021-04-12 12:16:01,275 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:01,283 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:01,296 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:01,304 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:01,312 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:01,320 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:01,327 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:01,340 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:17,768 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:17,778 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:17,842 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:17,852 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:17,906 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:17,914 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:17,951 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:17,958 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:18,359 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:18,366 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:18,574 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:18,579 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:18,586 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:18,591 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:18,596 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:18,604 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:42,690 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin: test@email.com does not exsist
-2021-04-12 12:16:42,692 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Client with email: test@email.com was retrieved
-2021-04-12 12:16:42,781 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:42,788 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,004 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,013 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,062 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,071 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,092 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,100 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,115 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,123 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,374 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,381 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,423 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,433 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,451 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,458 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,465 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:16:45,474 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:38,604 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin: test@email.com does not exsist
-2021-04-12 12:17:38,606 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Client with email: test@email.com was retrieved
-2021-04-12 12:17:38,695 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:38,703 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:49,526 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies for test@email.com were retrieved successfully
-2021-04-12 12:17:50,290 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:50,296 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:50,307 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:50,313 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:50,319 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:50,326 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:50,331 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:17:50,340 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:30,694 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Client with email: test@email.com was retrieved
-2021-04-12 12:21:30,696 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Admin: test@email.com does not exsist
-2021-04-12 12:21:30,789 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:30,795 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,308 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,316 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,370 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,378 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,414 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,420 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,428 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,436 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,711 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,718 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,772 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,780 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,788 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,795 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,803 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:21:33,810 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:36,894 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Client with email: test@email.com was retrieved
-2021-04-12 12:35:36,894 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Admin: test@email.com does not exsist
-2021-04-12 12:35:37,044 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:40,675 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:40,683 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:40,739 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:40,748 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:40,779 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:40,788 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:40,796 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:40,797 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:41,081 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:41,088 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:41,139 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:41,146 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:41,156 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:41,165 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:41,187 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:35:41,193 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:37:33,199 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Admin: test@email.com does not exsist
-2021-04-12 12:37:33,200 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Client with email: test@email.com was retrieved
-2021-04-12 12:37:33,271 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:37:33,278 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,154 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,161 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,195 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,203 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,212 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,218 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,223 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,229 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,460 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,469 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,519 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,528 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,541 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,547 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,614 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:38:33,622 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:43:52,022 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:43:52,030 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:43:52,069 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:43:52,077 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:43:52,083 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:43:52,089 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:20,779 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Client with email: test@email.com was retrieved
-2021-04-12 12:58:20,780 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Admin: test@email.com does not exsist
-2021-04-12 12:58:20,873 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:20,880 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,424 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,433 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,489 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,502 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,511 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,518 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,615 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,621 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,817 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,824 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,871 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,879 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,892 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,901 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,910 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:23,917 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:27,944 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Client: test@email.com was successfully updated
-2021-04-12 12:58:28,751 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:28,757 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:28,766 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:28,773 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:28,780 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:28,787 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:28,795 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:28,802 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:30,069 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies for test@email.com were retrieved successfully
-2021-04-12 12:58:32,735 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:32,764 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:32,771 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:32,778 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:32,784 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:32,791 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:32,799 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 12:58:32,805 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:02,289 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Admin: test@email.com does not exsist
-2021-04-12 13:17:02,290 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Client with email: test@email.com was retrieved
-2021-04-12 13:17:02,382 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:02,388 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:12,855 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:12,862 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:12,898 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:12,905 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:12,915 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:12,916 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:12,931 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:12,938 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:21,688 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:21,695 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:21,730 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:21,736 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:21,893 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:21,899 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:27,083 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies for test@email.com were retrieved successfully
-2021-04-12 13:17:34,647 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:34,653 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:34,690 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:34,697 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:34,705 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:34,712 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:47,144 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:47,149 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:47,156 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:47,162 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:47,167 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:47,174 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:47,179 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:47,184 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:51,713 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:51,719 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:51,726 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:51,731 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:51,739 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:51,746 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:51,752 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:51,757 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:54,216 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:54,224 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:54,254 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:54,263 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:54,276 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:54,283 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:54,290 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 13:17:54,296 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:22,747 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:22,755 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:22,763 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:22,771 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:22,777 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:22,783 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:22,788 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:22,794 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
-2021-04-12 13:54:25,207 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies for test@email.com were retrieved successfully
-2021-04-12 15:01:41,983 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 11.0.10 on DESKTOP-EUP6709 with PID 22828 (D:\CAPSTONE PROJECT\HailMary\HailMaryAPI\HailMaryAPI\target\classes started by rayfi in D:\CAPSTONE PROJECT\HailMary)
-2021-04-12 15:01:41,992 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2021-04-12 15:01:48,190 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 6.965 seconds (JVM running for 7.528)
-2021-04-12 15:01:54,038 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin: admin@email does not exsist
-2021-04-12 15:01:54,038 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Client with email: admin@email does not exsist
-2021-04-12 15:01:57,343 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Admin: admin@email does not exsist
-2021-04-12 15:01:57,347 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Client with email: admin@email does not exsist
-2021-04-12 15:02:11,790 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Admin: Admin does not exsist
-2021-04-12 15:02:11,793 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Client with email: Admin does not exsist
-2021-04-12 15:02:14,344 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Admin: admin@email.com does not exsist
-2021-04-12 15:02:14,346 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Client with email: admin@email.com does not exsist
-2021-04-12 15:03:38,453 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Admin: admin@email.com does not exsist
-2021-04-12 15:03:38,453 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Client with email: admin@email.com does not exsist
-2021-04-12 15:03:51,435 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Admin: admin@email.com does not exsist
-2021-04-12 15:03:51,439 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Client with email: admin@email.com does not exsist
-2021-04-12 16:14:17,611 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Client with email: admin@email.com does not exsist
-2021-04-12 16:14:17,611 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin: admin@email.com does not exsist
-2021-04-12 16:14:21,680 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Admin: test@email.com does not exsist
-2021-04-12 16:14:21,740 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client with email: test@email.com was retrieved
-2021-04-12 16:14:21,981 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
-2021-04-12 16:16:36,507 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Admin: admin@email.com does not exsist
-2021-04-12 16:16:36,510 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Client with email: admin@email.com does not exsist
-2021-04-12 16:17:59,992 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Client with email: admin@email.com does not exsist
-2021-04-12 16:17:59,993 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin: admin@email.com does not exsist
-2021-04-12 16:18:01,761 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client with email: admin@email.com does not exsist
-2021-04-12 16:18:01,764 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Admin: admin@email.com does not exsist
-2021-04-12 16:18:09,410 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin: admin@email.com does not exsist
-2021-04-12 16:18:09,413 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Client with email: admin@email.com does not exsist
-2021-04-12 16:18:10,655 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Admin: admin@email.com does not exsist
-2021-04-12 16:18:10,658 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Client with email: admin@email.com does not exsist
-2021-04-12 16:18:11,381 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Client with email: admin@email.com does not exsist
-2021-04-12 16:18:11,384 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Admin: admin@email.com does not exsist
-2021-04-12 16:18:12,136 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Admin: admin@email.com does not exsist
-2021-04-12 16:18:12,138 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Client with email: admin@email.com does not exsist
-2021-04-12 16:18:19,707 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Client with email: admin@email.com does not exsist
-2021-04-12 16:18:19,708 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Admin: admin@email.com does not exsist
-2021-04-12 16:18:26,919 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin: admin@email.com was retrieved
-2021-04-12 16:18:26,921 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Client with email: admin@email.com does not exsist
-2021-04-12 16:32:12,278 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Retrieved all clients
-2021-04-12 16:37:28,553 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Retrieved all clients
-2021-04-12 16:37:35,116 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
-2021-04-12 16:38:01,591 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Retrieved all clients
-2021-04-12 16:39:10,796 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Retrieved all clients
-2021-04-12 16:39:46,693 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
-2021-04-12 16:40:11,986 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Retrieved all clients
-2021-04-12 16:40:24,734 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Retrieved all clients
-2021-04-12 16:40:51,109 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Retrieved all clients
-2021-04-12 16:41:05,108 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
-2021-04-12 16:41:08,871 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Retrieved all clients
-2021-04-12 16:41:11,352 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
-2021-04-12 16:41:29,826 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Retrieved all clients
-2021-04-12 16:41:47,522 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Retrieved all clients
-2021-04-12 16:42:05,168 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Retrieved all clients
-2021-04-12 16:42:20,491 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
-2021-04-12 16:42:34,987 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Retrieved all clients
-2021-04-12 16:42:56,789 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Retrieved all clients
-2021-04-12 16:43:23,180 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Retrieved all clients
-2021-04-12 16:45:30,674 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Retrieved all clients
-2021-04-12 16:45:40,757 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
-2021-04-12 16:47:18,286 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Retrieved all clients
-2021-04-12 16:47:20,892 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Retrieved all clients
-2021-04-12 16:47:22,064 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
-2021-04-12 16:49:11,880 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Retrieved all clients
-2021-04-12 16:50:21,104 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
-2021-04-12 16:50:26,104 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Retrieved all clients
-2021-04-12 16:50:27,541 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
-2021-04-12 16:50:35,099 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Retrieved all clients
-2021-04-12 16:51:46,002 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Retrieved all clients
-2021-04-12 16:51:46,696 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
-2021-04-12 16:56:09,541 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
-2021-04-12 17:02:18,601 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
-2021-04-12 17:02:46,487 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Retrieved all clients
-2021-04-12 17:03:06,039 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Retrieved all clients
-2021-04-12 17:04:08,128 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
-2021-04-12 17:04:09,127 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Retrieved all clients
-2021-04-12 17:09:51,953 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Retrieved all clients
-2021-04-12 17:12:05,065 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Retrieved all clients
-2021-04-12 17:15:43,576 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies for admin@email.com were retrieved successfully
-2021-04-12 17:15:56,290 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies for admin@email.com were retrieved successfully
-2021-04-12 17:16:07,719 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies for admin@email.com were retrieved successfully
-2021-04-12 17:16:08,151 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies for admin@email.com were retrieved successfully
-2021-04-12 17:17:01,072 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies for admin@email.com were retrieved successfully
-2021-04-12 17:17:07,453 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies for admin@email.com were retrieved successfully
-2021-04-12 17:17:10,341 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies for admin@email.com were retrieved successfully
+2021-04-14 11:46:52,481 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 11.0.10 on DESKTOP-EUP6709 with PID 9416 (D:\CAPSTONE PROJECT\HailMary\HailMaryAPI\HailMaryAPI\target\classes started by rayfi in D:\CAPSTONE PROJECT\HailMary)
+2021-04-14 11:46:52,487 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-14 11:46:59,064 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 7.322 seconds (JVM running for 7.972)
+2021-04-14 11:47:14,092 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Retrieved all clients
+2021-04-14 11:48:49,772 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Retrieved all clients
+2021-04-14 11:49:02,314 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
+2021-04-14 11:50:17,610 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Retrieved all clients
+2021-04-14 11:51:31,037 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
+2021-04-14 11:51:43,539 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Retrieved all clients
+2021-04-14 11:51:45,199 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Retrieved all clients
+2021-04-14 12:09:13,593 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
+2021-04-14 12:17:20,142 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
+2021-04-14 12:24:38,099 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Retrieved all clients
+2021-04-14 12:26:13,124 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Retrieved all clients
+2021-04-14 12:28:45,306 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
+2021-04-14 12:30:37,610 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
+2021-04-14 12:30:47,395 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Retrieved all clients
+2021-04-14 17:58:49,200 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 11.0.10 on DESKTOP-EUP6709 with PID 3972 (D:\CAPSTONE PROJECT\HailMary\HailMaryAPI\HailMaryAPI\target\classes started by rayfi in D:\CAPSTONE PROJECT\HailMary)
+2021-04-14 17:58:49,206 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-14 17:58:54,079 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 5.469 seconds (JVM running for 5.951)
+2021-04-14 17:59:58,772 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin: test@email.com does not exsist
+2021-04-14 17:59:58,781 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Client with email: test@email.com was retrieved
+2021-04-14 17:59:59,054 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,591 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,605 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,624 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,637 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,651 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,665 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,685 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,697 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,825 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,838 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,865 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,880 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,896 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,916 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,945 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:00:00,957 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:30,701 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies for test@email.com were retrieved successfully
+2021-04-14 18:01:34,206 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:34,218 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:34,227 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:34,238 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:34,250 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:34,265 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:34,280 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:34,290 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:37,277 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:37,288 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:37,297 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:37,310 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:37,319 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:37,328 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:37,338 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:37,348 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:38,994 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:39,007 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:39,018 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:39,028 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:39,040 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:39,051 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:39,060 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:39,070 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:46,944 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:46,954 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:46,962 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:46,974 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:46,984 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:46,992 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:47,001 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:47,012 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:53,578 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:53,589 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:53,598 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:53,610 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:53,620 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:53,629 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:53,639 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:01:53,648 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:12,746 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:12,755 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:12,763 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:12,776 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:12,784 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:12,792 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:12,801 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:12,809 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:37,310 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:37,319 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:37,329 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:37,339 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:37,348 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:37,357 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:37,364 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:37,374 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:39,394 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:39,405 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:39,413 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:39,423 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:39,432 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:39,450 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:39,461 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:39,474 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:55,058 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:55,068 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:55,082 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:55,091 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:55,100 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:55,110 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:55,118 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:02:55,126 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:48,724 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:48,735 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:48,751 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:48,760 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:48,772 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:48,781 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:48,791 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:48,801 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:51,347 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:51,356 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:51,372 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:51,381 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:51,392 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:51,402 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:51,413 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:05:51,424 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:06:18,582 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:06:18,592 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:06:18,600 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:06:18,611 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:06:18,619 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:06:18,626 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:06:18,634 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:06:18,643 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:09:48,556 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies for test@email.com were retrieved successfully
+2021-04-14 18:10:33,021 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies for test@email.com were retrieved successfully
+2021-04-14 18:10:53,569 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:10:53,580 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:10:53,589 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:10:53,597 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:10:53,607 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:10:53,613 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:10:53,621 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:10:53,627 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:11:22,001 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies for test@email.com were retrieved successfully
+2021-04-14 18:12:43,833 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:12:43,845 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:12:43,862 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:12:43,877 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:12:43,890 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:12:43,901 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:12:43,916 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:12:43,927 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,363 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,379 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,430 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,442 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,452 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,462 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,513 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,524 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,707 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,719 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,748 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,761 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,776 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,792 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,807 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:14:03,819 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:20:02,839 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:20:02,848 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:20:02,863 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:20:02,873 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:20:02,880 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:20:02,887 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:20:02,893 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:20:02,902 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:21:59,933 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:21:59,942 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:21:59,950 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:21:59,957 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:21:59,965 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:21:59,972 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:21:59,980 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:21:59,987 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,387 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,397 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,439 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,449 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,456 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,466 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,509 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,640 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,649 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,672 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,681 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,690 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,702 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,713 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary with id: 1 doesnt exsist
+2021-04-14 18:24:26,714 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary with id: 1 doesnt exsist
+2021-04-14 18:26:23,453 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Client with email: admin@email.com does not exsist
+2021-04-14 18:26:23,458 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Admin: admin@email.com was retrieved
+2021-04-14 18:26:50,060 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Retrieved all clients
+2021-04-14 18:26:50,280 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
+2021-04-14 18:30:21,088 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
