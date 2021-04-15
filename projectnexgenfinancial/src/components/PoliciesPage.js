@@ -10,6 +10,7 @@ function PoliciesPage() {
     history.push("/");
   };
 
+  
   const [policies, setPolicies] = useState([]);
   const [testUser, setTestUser] = useState([]);
 

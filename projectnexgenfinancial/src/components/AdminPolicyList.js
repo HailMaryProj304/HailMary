@@ -10,6 +10,17 @@ function AdminPolicyList () {
     localStorage.clear();
     history.push('/')
   }
+
+  const getUser= async () => {
+    try {
+          if(!localStorage.getItem('type'))
+              {
+                redirect();
+              }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
   let location = useLocation();
   const [policies, setPolicies] = useState([]);
   const getPolicies = async () => {
@@ -22,7 +33,7 @@ function AdminPolicyList () {
     }
   };
   useEffect( () => {
-   
+    getUser();
     getPolicies();
   }, []);
 

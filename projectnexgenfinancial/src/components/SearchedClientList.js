@@ -104,12 +104,13 @@ function SearchedClientList() {
   }, []);
 
   const searchClients = async e => {
-     if(buttonOption.button === "email") {
-      getUserByEmail(searchTerm.searchTerm);
-     }
-     if(buttonOption.button === "lastName") {
-       getUsersByLastName(searchTerm.searchTerm)
-     }
+    e.preventDefault();
+    if(buttonOption.button === "email") {
+    getUserByEmail(searchTerm.searchTerm);
+    }
+    if(buttonOption.button === "lastName") {
+      getUsersByLastName(searchTerm.searchTerm)
+    }
   }
 
     return (

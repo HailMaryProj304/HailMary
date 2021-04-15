@@ -24,8 +24,19 @@ function AdminPolicyPage() {
     localStorage.clear();
     history.push('/')
   }
-
+  const getUser= async () => {
+    try {
+          if(!localStorage.getItem('type'))
+              {
+                redirect();
+              }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+  
   useEffect(() => {
+    getUser();
     if(localStorage.getItem("adminUserDetails") !== null) {
       setUserDetails(JSON.parse(localStorage.getItem("adminUserDetails")));
     }
