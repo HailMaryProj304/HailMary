@@ -55,10 +55,10 @@ function RegisterAdmin() {
   return (
     <div>
       <form onSubmit={submitHandler}>
-        <div className="innerForm" style={{height:"100vh"}}>
-          <h2 className="center-title">Register
+        <div className="innerForm" style={{height:"60vh"}}>
+          <h2 className="center-title" style={{marginTop:"3rem"}}>Register Admin
           {(error != "") ? (<div className="error">{error}</div>) : ""}</h2>
-          <div >
+          <div style={{margin:"0"}}>
             <div className="form-group">
               <label>First name</label>
               <br />
@@ -116,7 +116,7 @@ function RegisterAdmin() {
               />
             </div>
           </div>
-          <div className="register-button" style={{width:"200px"}}>
+          <div className="register-button" style={{width:"200px", marginTop:"55vh"}}>
             <input type="submit" className="button" value="Register"></input>
           </div>
         </div>

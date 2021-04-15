@@ -91,7 +91,7 @@ function PoliciesPage() {
                       }
                     });
                   }}
-                  className="tableButton"
+                  className="tableButton1"
                 >
                   View
                 </button>
@@ -110,7 +110,7 @@ function PoliciesPage() {
                           item.policyNumber
                       )
                     }
-                    className="tableButton"
+                    className="tableButton1"
                   >
                     Need Contact For This Policy
                   </button>
