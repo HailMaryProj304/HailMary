@@ -6,12 +6,14 @@ import axios from "axios";
 var test = "NOT WORKING";
 
 function SearchedClientList() {
+  
   let history = useHistory();
   const redirect = () => {
     console.log("Logout");
     localStorage.clear();
     history.push("/");
   };
+
   const getUser = async () => {
     try {
       if (!localStorage.getItem("user")) {
@@ -21,17 +23,27 @@ function SearchedClientList() {
       console.error(err.message);
     }
   };
+
   useEffect(() => {
     getUser();
   }, []);
 
   const [result, setResult] = useState([]);
+  
   const [URL, setURL] = useState({
     summary_id: "",
     client: "",
     path: "",
   });
 
+  const [buttonOption, setButtonOption] = useState({
+    button: "",
+  });
+  //separating state variables made it work
+  const [searchTerm, setSearchTerm] = useState({
+    searchTerm: ""
+  });
+  //Delete A client
   function deleteClient(client, e) {
     e.preventDefault();
     console.log(client);
@@ -53,26 +65,69 @@ function SearchedClientList() {
     axios.post("http://localhost:8080/summary/RegisterSummary/", URL);
   }
 
+  //Search for a user by email
   const getUserByEmail = async (email) => {
-    const response = await Axios("http://localhost:8080/clients/clientemail/" + email);
-    setResult(response.data);
-    //console.log(list)
+    if(email !== "" && email.length > 0) {
+      const response = await Axios("http://localhost:8080/clients/clientemail/" + email);
+      if(response.data.length > 0 && response.data) {
+        setResult(response.data);
+      }
+      else {
+        setResult("Error");
+        console.log(result);
+      }
+    }
+    else {
+      setResult("Error");
+      console.log(result);
+    }
   };
 
+  //Search users by lastname
   const getUsersByLastName = async (lastname) => {
-    const response = await Axios("http://localhost:8080/clients/clientsbylastname/" + lastname);
-    setResult(response.data);
-    
-  useEffect(() => {
-    console.log(result);
-  }, [result]);
+    if(lastname !== "" && lastname.length > 0) {
+      const response = await Axios("http://localhost:8080/clients/clientsbylastname/" + lastname);
+      if(response.data.length > 0 && response.data) {
+        setResult(response.data);
+      }
+      else {
+        setResult("Error");
+      }
+    }
+    else {
+      setResult("Error");
+    }
+  }
 
   useEffect(() => {
-    getUsers();
+    getUser();
   }, []);
+
+  const searchClients = async e => {
+     if(buttonOption.button === "email") {
+      getUserByEmail(searchTerm.searchTerm);
+     }
+     if(buttonOption.button === "lastName") {
+       getUsersByLastName(searchTerm.searchTerm)
+     }
+  }
 
     return (
   <div>
+    <form onSubmit={searchClients}>
+      <h3>Search for Clients</h3>
+       <input type="text" placeholder="Search..."
+      className='form-control'
+      value={searchTerm.searchTerm}
+      onChange={(e) =>
+        setSearchTerm({ searchTerm: e.target.value })
+      }></input>
+      
+      <button onClick={() => (setButtonOption({button: "email", clicked: true}))}
+      type="submit">Search by Email</button>
+      <button onClick={() => (setButtonOption({button: "lastName", clicked: true}))}
+      type="submit">Search by Lastname</button>
+    </form>
         <form>
           <table>
               <tbody>
@@ -85,7 +140,10 @@ function SearchedClientList() {
                   <th>Insert Summary</th>
                   <th>Submit</th>
                 </tr>
-              {result.map(client => (
+                {(result === "Error") ? (
+               <tr><h2>No Clients Found</h2></tr>
+            ):
+              (result.map(client => (
                 <tr>
                 <td key={client.client_id}>{client.first_name + " " +  client.last_name}</td>
                 <td>{client.email}</td>
@@ -111,11 +169,12 @@ function SearchedClientList() {
                 style={{ width: "200px" }}
                 />
                 </td>
-            </tr>))}
+            </tr>)))}
             </tbody>
           </table>
         </form>     
         </div>
     )
 }
+
 export default SearchedClientList;

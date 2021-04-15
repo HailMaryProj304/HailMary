@@ -42,6 +42,12 @@ function AdminPage() {
               <h3>List all clients</h3>
               List all clients in the database <br />
             </Link>
+
+            <Link to="/SearchedClientList" className="adminLinks">
+              <img src={Icon} width="50px"></img>
+              <h3>Search for Clients</h3>
+              Search for Client(s) <br />
+            </Link>
           </div>
         );   
 }

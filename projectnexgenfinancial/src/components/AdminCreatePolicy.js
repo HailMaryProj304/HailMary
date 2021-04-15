@@ -24,7 +24,18 @@ function AdminCreatePolicy() {
     history.push('/')
   }
 
+  const getUser = async () => {
+    try {
+      if (!localStorage.getItem("user")) {
+        redirect();
+      }
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+
   useEffect(() => {
+    getUser();
     if(localStorage.getItem("createPolicyDetails") !== null) {
       setcreatePolicyDetails(JSON.parse(localStorage.getItem("createPolicyDetails")));
     }

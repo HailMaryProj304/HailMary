@@ -5,7 +5,6 @@ import { useLocation, useHistory } from "react-router-dom";
 
 function PolicyPage(props) {
   
-  const [policy, setPolicy] = useState({});
   const [userDetails, setUserDetails] = useState({});
 
   let history = useHistory();

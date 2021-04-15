@@ -51,6 +51,7 @@ import AdminPolicyList from "./components/AdminPolicyList";
 import AdminPolicyPage from "./components/AdminPolicyPage";
 import ChangeClient from "./components/ChangeClient";
 import AdminCreatePolicy from "./components/AdminCreatePolicy";
+import SearchedClientList from "./components/SearchedClientList";
 
 function App() {
   return (
@@ -129,6 +130,9 @@ function App() {
             </Route>
           <Route path="/AdminCreatePolicy">
             <AdminCreatePolicy />
+          </Route>
+          <Route path="/SearchedClientList">
+            <SearchedClientList />
           </Route>
         </Switch>
       </Router>
