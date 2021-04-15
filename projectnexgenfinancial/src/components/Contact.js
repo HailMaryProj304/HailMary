@@ -4,7 +4,7 @@ import "../CSS/style.css";
 
 function Contact() {
   const [emailDetails, setEmailDetails] = useState({
-    email: "",
+    from: "",
     name: "",
     topic: "",
   });
