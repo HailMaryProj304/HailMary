@@ -29,7 +29,7 @@ function AccountPage() {
     getUser();
   }, []);
 
-  const [user, setUser] = useState("")
+  let user;
   const fillUser = JSON.parse(localStorage.getItem('user'))
   var clientId
   const [userDetails, setUserDetails] = useState({
@@ -49,7 +49,19 @@ function AccountPage() {
   const submitHandler = (e) => {
     e.preventDefault();
     //make get Id by email axios here
-    axios.put("http://localhost:8080/clients/update/", userDetails)
+    axios.put("http://localhost:8080/clients/update/", userDetails);
+    
+    fillUser.email = userDetails.email;
+    fillUser.first_name = userDetails.first_name;
+    fillUser.last_name = userDetails.last_name;
+    fillUser.dob = userDetails.dob;
+    fillUser.phone_number = userDetails.phone_number;
+    fillUser.street_address = userDetails.street_address;
+    fillUser.prov = userDetails.prov;
+    fillUser.country = userDetails.country;
+    fillUser.postal_code = userDetails.postal_code;
+    fillUser.password = userDetails.password;
+    localStorage.setItem('user', JSON.stringify(fillUser));
     history.push("/MainPage")
   }
 
