@@ -78,11 +78,11 @@ function MainPage() {
             </Link>
           </div>
           <div className="grid-items">
-            <Link to="/purchase" style={{ color: "black" }}>
+            <a href="https://www.imchubbinsured.ca/en/nexgen/login.aspx?Login=T2029" style={{ color: "black" }}>
               <img src={Icon} width="50px"></img>
               <h3>Buy Insurance</h3>
-              Buy Insurance Here
-            </Link>
+              Buy No Medical Examination Insurance at Chubb Insurance
+            </a>
           </div>
           <div className="grid-items">
             <Link to="/Quote" style={{ color: "black" }}>
