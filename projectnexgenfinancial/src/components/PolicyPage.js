@@ -43,7 +43,7 @@ function PolicyPage(props) {
 
   
   return (
-    <div className="container">
+    <div className="container" style={{display:"flex", justifyContent:"center"}}>
       <div className="split left">
         <div>
           <label htmlFor="Policy Number">Policy Number</label>
