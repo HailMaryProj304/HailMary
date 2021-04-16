@@ -5,9 +5,19 @@ import { useLocation, useHistory } from "react-router-dom";
 
 function PolicyPage(props) {
   
-  const [userDetails, setUserDetails] = useState({});
+  const [userDetails, setUserDetails] = useState({
+        policyNumber: '', 
+        first_name: '', 
+        last_name: '', 
+        provider: '', 
+        type: '', 
+        coverage_amount: '', 
+        start_date: '', 
+        end_date: ''
+  });
 
   let history = useHistory();
+  console.log(history.location);
   const redirect = () => {
     console.log("Logout");
     localStorage.clear();
@@ -16,10 +26,13 @@ function PolicyPage(props) {
   //const location = useLocation();
   useEffect(() => {
     if(localStorage.getItem("userDetails") !== null) {
-      setUserDetails(localStorage.getItem("userDetails"));
+      console.log("saved user details found");
+      setUserDetails(JSON.parse(localStorage.getItem("userDetails")));
     }
     else {
-       setUserDetails({
+      console.log("no saved details found");
+      localStorage.removeItem("userDetails");
+      setUserDetails({
         policyNumber: history.location.state.policyNumber, 
         first_name: history.location.state.first_name, 
         last_name: history.location.state.last_name, 
@@ -30,9 +43,12 @@ function PolicyPage(props) {
         end_date: history.location.state.end_date,
       });
     }
-    localStorage.setItem("userDetails", userDetails);
+    localStorage.setItem("userDetails", JSON.stringify(userDetails));
   }, []);
   
+  useEffect(() => {
+    localStorage.setItem("userDetails", JSON.stringify(userDetails));
+  }, [userDetails]);
   
   //history.push("/PolicyPage", userDetails);
 

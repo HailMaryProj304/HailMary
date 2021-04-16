@@ -60,7 +60,8 @@ function SearchedClientList() {
     });
   }
 
-  function updateSummary() {
+  function updateSummary(e) {
+    e.preventDefault();
     console.log("added summary?");
     axios.post("http://localhost:8080/summary/RegisterSummary/", URL);
   }
