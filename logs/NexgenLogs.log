@@ -388,3 +388,22 @@
 2021-04-15 14:58:54,123 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Client with email: Test does not exsist
 2021-04-15 14:58:59,009 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Client with email: test does not exsist
 2021-04-15 14:59:03,966 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Client with email: test does not exsist
+2021-04-15 15:07:09,944 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 11.0.10 on DESKTOP-EUP6709 with PID 25896 (D:\CAPSTONE PROJECT\HailMary\HailMaryAPI\HailMaryAPI\target\classes started by rayfi in D:\CAPSTONE PROJECT\HailMary)
+2021-04-15 15:07:09,949 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-15 15:07:18,425 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 9.375 seconds (JVM running for 10.15)
+2021-04-15 15:07:42,401 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Retrieved all clients
+2021-04-15 15:07:48,509 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Clients with lastname containing: Test were retrieved
+2021-04-15 15:10:33,570 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Clients with lastname containing: test were retrieved
+2021-04-15 15:11:38,850 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Retrieved all clients
+2021-04-15 15:11:58,221 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Clients with lastname containing: test were retrieved
+2021-04-15 15:16:34,451 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Retrieved all clients
+2021-04-15 15:18:52,416 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Retrieved all clients
+2021-04-15 15:19:24,449 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Retrieved all clients
+2021-04-15 15:19:50,050 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Retrieved all clients
+2021-04-15 15:20:13,752 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Retrieved all clients
+2021-04-15 15:21:06,600 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Clients with lastname containing: test were retrieved
+2021-04-15 15:24:59,998 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Clients with lastname containing: test were retrieved
+2021-04-15 15:25:54,973 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Clients with lastname containing: test were retrieved
+2021-04-15 15:25:58,446 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Retrieved all clients
+2021-04-15 15:26:05,362 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Clients with lastname containing: test were retrieved
+2021-04-15 15:34:22,154 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Clients with lastname containing: test were retrieved

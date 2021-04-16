@@ -9,6 +9,7 @@ const NavLinksContainer = styled.div`
 
 const LinksWrapper = styled.ul`
   margin: 0;
+  margin-left: 8vw;
   padding: 0;
   display: flex;
   height: 100%;
